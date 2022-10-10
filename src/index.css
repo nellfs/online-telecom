@@ -1,5 +1,47 @@
 :root {
   background: white;
+  font-family: "Montserrat", sans-serif;
+
+  --color-dark: #373435;
+  --color-light: #fff;
+  --color-grey: #666;
+  --color-grey-box: rgba(233, 233, 233, 0.501961);
+  --color-grey-dark: #404246;
+  --color-grey-light: #909296;
+  --color-grey-lighter: #f8f8f8;
+  --color-grey-link: #787878;
+  --color-primary: #dc3639;
+  --color-header-blue: #01062e;
+  --color-secondary: #373435;
+  --color-text: #333539;
+  --color-text-muted: #666;
+  --color-form-color: rgba(0, 0, 0, 0.02);
+  --color-blue: #428ef0;
+  --color-modal-bg: #f8f8f8;
+  --color-form-border: #ededed;
+  --color-border-modal: #e9e9e9;
+  --color-border-plan: #ccc;
+  --color-placeholder-form: #828282;
+  --color-map-red: #cf2a2d;
+  --color-map-red-dark: #9b0e12;
+  --color-info: #36a3f7;
+  --color-success: #34bfa3;
+  --color-warning: #ffb822;
+  --color-danger: #f4516c;
+  --color-facebook: #044d96;
+  --color-twitter: #1da1f2;
+  --color-google-plus: #dd4b39;
+  --color-linkedIn: #0077b5;
+  --color-youtube: red;
+  --color-whatsapp: #0fc244;
+  --color-primary-light: #df4649;
+  --color-primary-lighter: #e15457;
+  --color-primary-dark: #ca3234;
+  --color-primary-darker: #bb2e30;
+  --color-secondary-light: #474445;
+  --color-secondary-lighter: #555253;
+  --color-secondary-dark: #333031;
+  --color-secondary-darker: #2f2c2d;
 }
 
 body {

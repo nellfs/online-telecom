@@ -1,5 +1,7 @@
+import Location from "./pages/Location";
+
 function App() {
-  return <div className="App">test</div>;
+  return <Location></Location>;
 }
 
 export default App;
