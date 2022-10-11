@@ -2,6 +2,7 @@ import "./index.css";
 
 import online_icon from "../../assets/icon_onlinetelecom.png";
 import map from "../../assets/map.svg";
+import Map from "../../components/Map/map";
 
 const Location = () => {
   return (
@@ -20,7 +21,10 @@ const Location = () => {
       </div>
       <div className="location__right">
         <div className="location__map">
-          <img src={map} style={{}}></img>
+          {/* the original doesn't have a centered map, I'm decentering to match*/}
+          <b>
+            <Map />
+          </b>
         </div>
       </div>
     </div>

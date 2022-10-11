@@ -1,9 +1,23 @@
+#BR-PA {
+  fill: var(--color-map-red-dark);
+}
+#BR-MA {
+  fill: var(--color-map-red-dark);
+}
+#BR-PI {
+  fill: var(--color-map-red-dark);
+}
+#BR-CE {
+  fill: var(--color-map-red-dark);
+}
+
 .location__main {
   display: flex;
 }
 
 .location__map {
   margin: auto;
+  font-size: 14px;
 }
 
 .location__left {
