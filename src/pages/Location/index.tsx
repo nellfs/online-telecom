@@ -8,25 +8,22 @@ const Location = () => {
   return (
     <div className="location__main">
       <div className="location__white">
-        <img className="online_icon" src={online_icon} />
         <div className="location__white__main">
-          {/* <h2>Selecione seu estado</h2>
+          <h2>Selecione seu estado</h2>
           <p>
             Chegou a sua vez de ser{" "}
             <a>
               <b>ONLINE TELECOM!</b>
             </a>
-          </p> */}
+          </p>
         </div>
       </div>
       <div className="location__red">
-        {/* <div className="location__map">
+        <div className="location__map">
           <b>
-            <div className="location__map__container">
-              <Map />
-            </div>
+            <Map widht={"100%"} height={"100%"} />
           </b>
-        </div> */}
+        </div>
       </div>
     </div>
   );
