@@ -7,25 +7,26 @@ import Map from "../../components/Map/map";
 const Location = () => {
   return (
     <div className="location__main">
-      <div className="location__left">
+      <div className="location__white">
         <img className="online_icon" src={online_icon} />
-        <div className="location__left__main">
-          <h2>Selecione seu estado</h2>
+        <div className="location__white__main">
+          {/* <h2>Selecione seu estado</h2>
           <p>
             Chegou a sua vez de ser{" "}
             <a>
               <b>ONLINE TELECOM!</b>
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
-      <div className="location__right">
-        <div className="location__map">
-          {/* the original doesn't have a centered map, I'm decentering to match*/}
+      <div className="location__red">
+        {/* <div className="location__map">
           <b>
-            <Map />
+            <div className="location__map__container">
+              <Map />
+            </div>
           </b>
-        </div>
+        </div> */}
       </div>
     </div>
   );

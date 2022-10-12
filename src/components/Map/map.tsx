@@ -6,7 +6,7 @@ export const Map = () => {
         id="BR-CE"
         fill="#fff"
         stroke="#fff"
-        stroke-width="3"
+        strokeWidth="3"
       ></path>
       <text x="528px" y="162px" className="CE" fill="#fff">
         CE
@@ -16,7 +16,7 @@ export const Map = () => {
         id="BR-MA"
         fill="#fff"
         stroke="#fff"
-        stroke-width="3"
+        strokeWidth="3"
       ></path>
       <text x="436px" y="172px" className="MA" fill="#fff">
         MA
@@ -26,7 +26,7 @@ export const Map = () => {
         id="BR-PA"
         fill="#fff"
         stroke="#fff"
-        stroke-width="2"
+        strokeWidth="2"
       ></path>
       <text x="320px" y="162px" className="PA" fill="#fff">
         PA
@@ -36,7 +36,7 @@ export const Map = () => {
         id="BR-PI"
         fill="#fff"
         stroke="#fff"
-        stroke-width="2"
+        strokeWidth="2"
       ></path>
       <text x="485px" y="208px" className="PI" fill="#fff">
         PI
