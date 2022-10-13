@@ -24,7 +24,7 @@ const Location = () => {
       <div className="location__red">
         <div className="location__map">
           <b>
-            <Map widht={"100%"} height={"100%"} />
+            <Map width={"100%"} height={"100%"} />
           </b>
         </div>
       </div>
