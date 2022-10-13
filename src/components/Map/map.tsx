@@ -1,5 +1,5 @@
 interface IMap {
-  widht: string;
+  width: string;
   height: string;
 }
 
