@@ -2,6 +2,7 @@ import "./index.css";
 
 import online_icon from "../../assets/icon_onlinetelecom.png";
 import Map from "../../components/Location/";
+import LocationOptions from "../../LocationOptions";
 
 const Location = () => {
   return (
@@ -22,9 +23,7 @@ const Location = () => {
       </div>
       <div className="location__red">
         <div className="location__map">
-          <b>
-            <Map showOptions={true} />
-          </b>
+          <Map />
         </div>
       </div>
     </div>

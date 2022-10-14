@@ -1,14 +1,14 @@
 .location__main {
   height: 100vh;
-
   display: flex;
   flex-direction: row;
 }
 
 .location__map {
-  width: 320px;
-  height: 320px;
-  margin: auto;
+  overflow: hidden;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
 }
 
@@ -78,7 +78,6 @@ b {
 
   .location__map {
     display: flex;
-    width: 320px;
   }
 
   .online_icon {

@@ -1,0 +1,24 @@
+.location__options__container {
+  position: relative;
+}
+
+.location__options {
+  position: relative;
+  top: 64px;
+  width: 320px;
+  height: 500px;
+  background-color: blue;
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes hide {
+  from {
+    margin-left: 51vw;
+  }
+
+  to {
+    margin: 0px;
+  }
+}
