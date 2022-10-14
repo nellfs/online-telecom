@@ -1,8 +1,23 @@
 .map {
-  transition: all 0.2s ease;
   cursor: pointer;
   fill: var(--color-map-red-dark);
   user-select: none;
+}
+
+#BR-PA {
+  transition: all 0.2s ease;
+}
+
+#BR-MA {
+  transition: all 0.2s ease;
+}
+
+#BR-PI {
+  transition: all 0.2s ease;
+}
+
+#BR-CE {
+  transition: all 0.2s ease;
 }
 
 #BR-PA:hover {
