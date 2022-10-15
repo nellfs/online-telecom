@@ -9,6 +9,13 @@ const LocationOptions = () => {
           <img src={SearchIcon}></img>
           <input type="search" placeholder="Digite sua cidade"></input>
         </div>
+        <ul className="location__options">
+          <a>
+            <li>test</li>
+            <li>hello</li>
+            <li>city</li>
+          </a>
+        </ul>
       </form>
     </div>
   );

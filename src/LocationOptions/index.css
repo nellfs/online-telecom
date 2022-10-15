@@ -6,11 +6,38 @@
   position: relative;
   top: 64px;
   width: 320px;
-  height: 500px;
-  background-color: #0000ff;
+  height: 80vh;
+  /* background-color: rgba(255, 255, 255, 0.1); */
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-name: hide-desktop;
+}
+
+.location__search {
+  display: inline-flex;
+}
+
+.location__search input {
+  font-family: Montserrat;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 16px;
+}
+
+.location__search img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  margin-right: 26px;
+}
+
+::placeholder {
+  color: white;
 }
 
 @keyframes hide-desktop {
@@ -35,6 +62,8 @@
 
 @media screen and (max-width: 720px) {
   .location__options__selector {
+    top: 42px;
     animation-name: hide-mobile;
+    height: 40vh;
   }
 }
