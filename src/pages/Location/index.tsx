@@ -1,6 +1,6 @@
 import "./index.css";
 
-import online_icon from "../../assets/icon_onlinetelecom.png";
+import OnlineIcon from "../../assets/icon_onlinetelecom.png";
 import Map from "../../components/Location/";
 import LocationOptions from "../../LocationOptions";
 
@@ -8,7 +8,7 @@ const Location = () => {
   return (
     <div className="location__main">
       <div className="location__white">
-        <img className="online_icon" src={online_icon} />
+        <img className="online_icon" src={OnlineIcon} />
         <div className="location__white__main">
           <h2>
             Selecione seu estado

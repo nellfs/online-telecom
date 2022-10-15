@@ -2,23 +2,39 @@
   position: relative;
 }
 
-.location__options {
+.location__options__selector {
   position: relative;
   top: 64px;
   width: 320px;
   height: 500px;
-  background-color: blue;
-  animation-name: hide;
+  background-color: #0000ff;
   animation-duration: 0.5s;
   animation-timing-function: ease;
+  animation-name: hide-desktop;
 }
 
-@keyframes hide {
+@keyframes hide-desktop {
   from {
-    margin-left: 51vw;
+    margin-left: 50vw;
   }
 
   to {
     margin: 0px;
+  }
+}
+
+@keyframes hide-mobile {
+  from {
+    margin-left: 100vw;
+  }
+
+  to {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .location__options__selector {
+    animation-name: hide-mobile;
   }
 }
