@@ -1,5 +1,56 @@
 {
   "states": {
-    "PA": ["Abaetetuba"]
+    "PA": {
+      "Abaetetuba": "Abaetetuba",
+      "Baião": "Baião",
+      "Barcarena": "Barcarena",
+      "Maguari": "Maguari",
+      "Marituba": "Marituba",
+      "Mocajuba": "Mocajuba",
+      "Moju": "Moju",
+      "Tailândia": "Tailândia",
+      "Tucuruí": "Vigia",
+      "Vila dos Cabanos": "Vila dos Cabanos"
+    },
+    "MA": {
+      "Anapurus": "Anapurus",
+      "São Bernardo": "São Bernardo"
+    },
+    "PI": {
+      "Brasileira": "Brasileira",
+      "Pedro II": "Pedro II",
+      "Piracuruca": "Piracuruca",
+      "Piripiri": "Piripiri"
+    },
+    "CE": {
+      "Alcântaras": "Alcântaras",
+      "Ararendá": "Ararendá",
+      "Barroquinha": "Barroquinha",
+      "Boa Viagem": "Boa Viagem",
+      "Caiçara": "Caiçara",
+      "Camocim": "Camocim",
+      "Cariré": "Cariré",
+      "Carnaubal": "Carnaubal",
+      "Catunda": "Catunda",
+      "Chaval": "Chaval",
+      "Crateús": "Crateús",
+      "Guaraciaba": "Guaraciaba",
+      "Hidrolândia": "Hidrolândia",
+      "Ibiapina": "Ibiapina",
+      "Independência": "Independência",
+      "Ipueiras": "Ipueiras",
+      "Irajá": "Irajá",
+      "Itatira": "Itatira",
+      "Lisieux": "Lisieux",
+      "Meruoca": "Meruoca",
+      "Monsenhor Tabosa": "Monsenhor Tabosa",
+      "Novo Oriente": "Novo Oriente",
+      "Pacatuba": "Pacatuba",
+      "Reriutaba": "Reriutaba",
+      "Santa Quitéria": "Santa Quitéria",
+      "Tamboril": "Tamboril",
+      "Ubajara": "Ubajara",
+      "Varjota": "Varjota"
+    }
   }
 }
