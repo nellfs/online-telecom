@@ -5,10 +5,11 @@
 }
 
 .location__map {
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   font-size: 14px;
 }
 
@@ -26,6 +27,7 @@
 
 .location__red {
   display: flex;
+  overflow: hidden;
   width: 50%;
   height: 100vh;
   background-color: var(--color-primary);

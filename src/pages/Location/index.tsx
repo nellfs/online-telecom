@@ -22,9 +22,7 @@ const Location = () => {
         </div>
       </div>
       <div className="location__red">
-        <div className="location__map">
-          <Map />
-        </div>
+        <Map />
       </div>
     </div>
   );

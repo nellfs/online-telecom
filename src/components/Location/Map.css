@@ -2,6 +2,7 @@
   cursor: pointer;
   fill: var(--color-map-red-dark);
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #BR-PA {
