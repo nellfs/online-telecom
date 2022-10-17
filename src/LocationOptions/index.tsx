@@ -30,7 +30,13 @@ const LocationOptions = (currentState: IMap) => {
       <form className="location__options__selector">
         <div className="location__search">
           <img src={SearchIcon}></img>
-          <input type="search" placeholder="Digite sua cidade"></input>
+          <input
+            onChange={(e) => {
+              console.log(e.target.value);
+            }}
+            type="search"
+            placeholder="Digite sua cidade"
+          ></input>
         </div>
         {/* {locations.states[`${currentState.state}`]} */}
         <ul className="location__options">

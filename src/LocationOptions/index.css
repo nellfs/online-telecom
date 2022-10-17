@@ -20,6 +20,7 @@
 }
 
 .location__search input {
+  outline: none;
   font-family: Montserrat;
   background-color: transparent;
   border: none;
