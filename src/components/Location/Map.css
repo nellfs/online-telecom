@@ -5,6 +5,42 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.map__back {
+  display: flex;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  margin-left: 32px;
+  margin-top: 32px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.map__back img {
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .map__back {
+    background-color: var(--color-map-red-dark);
+    width: 120px;
+    height: 34px;
+    border-radius: 100px;
+    margin-left: 0;
+    bottom: 2.2vh;
+    left: calc(50vw - 60px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+  }
+
+  .map__back img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 #BR-PA {
   transition: all 0.2s ease;
 }

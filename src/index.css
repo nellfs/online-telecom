@@ -42,6 +42,8 @@
   --color-secondary-lighter: #555253;
   --color-secondary-dark: #333031;
   --color-secondary-darker: #2f2c2d;
+
+  --color-scrollbar: #888;
 }
 
 body {

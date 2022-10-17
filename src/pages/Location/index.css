@@ -89,10 +89,10 @@ b {
   }
 
   h2 {
-    font-size: calc(10px + 6.5vw);
+    font-size: calc(8px + 5.1vh);
   }
 
   p {
-    font-size: calc(8px + 2.5vw);
+    font-size: calc(8px + 1.6vh);
   }
 }
