@@ -2,7 +2,7 @@ import "./index.css";
 import SearchIcon from "../../src/assets/search_icon.png";
 import locations_data from "../utils/dummy_locations.json";
 import { MapStates } from "../types/map";
-import { useEffect } from "react";
+import { useState } from "react";
 
 interface IMap {
   state: MapStates;
@@ -12,16 +12,24 @@ const LocationOptions = (currentState: IMap) => {
   const locations_string = JSON.stringify(locations_data);
   const locations = JSON.parse(locations_string);
 
+  const [searchLocation, setSearchLocation] = useState("");
+
   const getCities = () => {
-    const cities = locations.states[currentState.state].map(
-      (cities: string, n: number) => {
+    const cities = locations.states[currentState.state]
+      .filter((val: string) => {
+        if (searchLocation == "") return val;
+
+        if (val.toLowerCase().includes(searchLocation.toLowerCase())) {
+          return val;
+        }
+      })
+      .map((cities: string, n: number) => {
         return (
           <li key={n}>
             {cities} - {currentState.state}
           </li>
         );
-      }
-    );
+      });
     return cities;
   };
 
@@ -32,7 +40,7 @@ const LocationOptions = (currentState: IMap) => {
           <img src={SearchIcon}></img>
           <input
             onChange={(e) => {
-              console.log(e.target.value);
+              setSearchLocation(() => e.target.value);
             }}
             type="search"
             placeholder="Digite sua cidade"
