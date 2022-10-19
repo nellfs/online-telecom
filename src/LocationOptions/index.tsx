@@ -19,9 +19,8 @@ const LocationOptions = (currentState: IMap) => {
       .filter((val: string) => {
         if (searchLocation == "") return val;
 
-        if (val.toLowerCase().includes(searchLocation.toLowerCase())) {
+        if (val.toLowerCase().includes(searchLocation.toLowerCase()))
           return val;
-        }
       })
       .map((cities: string, n: number) => {
         return (
