@@ -1,5 +1,13 @@
+import NavBar from "../../components/Navbar";
+import "./index.css";
+
 const Home = () => {
-  return <div>todo</div>;
+  return (
+    <>
+      <NavBar></NavBar>
+      <div className="background"></div>
+    </>
+  );
 };
 
 export default Home;
