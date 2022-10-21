@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./Map.css";
 import LocationOptions from "../../LocationOptions";
-import BackIcon from "../../assets/back_icon.png";
+import BackIcon from "../../assets/icons/back_icon.png";
 import { MapStates } from "../../types/map";
 
 export const MapImage = () => {
