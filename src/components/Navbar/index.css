@@ -6,8 +6,8 @@
 }
 
 .container {
+  max-width: 1240px;
   font-weight: 300;
-  max-width: 130rem;
   padding: 0 20px;
   position: relative;
   margin: 0 auto;
@@ -22,6 +22,17 @@
   height: 38px;
   align-items: center;
   justify-content: flex-start;
+}
+
+.navbar__top-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__top-right img {
+  margin: auto;
+  margin-left: 20px;
+  height: 8px;
 }
 
 /* todo */
