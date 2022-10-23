@@ -24,6 +24,7 @@ const NavBar = () => {
           <img src={OnlineIcon}></img>
           <div className="navbar__bottom-left">
             <a>PARA VOCÊ</a>
+            <a>PARA EMPRESAS</a>
           </div>
         </div>
       </div>
