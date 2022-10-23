@@ -1,6 +1,7 @@
 import "./index.css";
 import ThemeIcon from "../../assets/icons/theme_icon.png";
 import ChevronDownIcon from "../../assets/utils/chevrondown_icon.png";
+import OnlineIcon from "../../assets/icons/icon_onlinetelecom.png";
 
 const NavBar = () => {
   return (
@@ -18,7 +19,14 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className="navbar__bottom">hello</div>
+      <div className="navbar__bottom">
+        <div className="container__bottom">
+          <img src={OnlineIcon}></img>
+          <div className="navbar__bottom-left">
+            <a>PARA VOCÊ</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
