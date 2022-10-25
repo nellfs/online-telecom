@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Map.css";
-import LocationOptions from "../../LocationOptions";
+import LocationOptions from "./LocationOptions";
 import BackIcon from "../../assets/icons/back_icon.png";
 import { MapStates } from "../../types/map";
 

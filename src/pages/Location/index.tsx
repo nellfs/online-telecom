@@ -2,7 +2,7 @@ import "./index.css";
 
 import OnlineIcon from "../../assets/icons/icon_onlinetelecom.png";
 import Map from "../../components/Location/";
-import LocationOptions from "../../LocationOptions";
+import LocationOptions from "../../components/Location/LocationOptions";
 
 const Location = () => {
   return (

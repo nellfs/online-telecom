@@ -68,8 +68,14 @@
 
 .navbar__bottom-left {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
   font-size: 14px;
   width: 100%;
   margin: auto;
+}
+
+.navbar__bottom-left div {
+  display: flex;
+  gap: 20px;
 }

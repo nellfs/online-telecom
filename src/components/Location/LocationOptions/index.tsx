@@ -1,7 +1,7 @@
 import "./index.css";
-import SearchIcon from "../../src/assets/icons/search_icon.png";
-import locations_data from "../utils/dummy_locations.json";
-import { MapStates } from "../types/map";
+import SearchIcon from "../../../assets/icons/search_icon.png";
+import locations_data from "../../../utils/dummy_locations.json";
+import { MapStates } from "../../../types/map";
 import { useState } from "react";
 
 interface IMap {
