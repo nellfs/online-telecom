@@ -54,6 +54,7 @@
 }
 
 .container__bottom {
+  padding: 0 20px;
   display: flex;
   width: 100%;
   margin: auto;
@@ -69,13 +70,18 @@
 .navbar__bottom-left {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   font-size: 14px;
   width: 100%;
   margin: auto;
 }
 
-.navbar__bottom-left div {
+.bottom__left {
   display: flex;
   gap: 20px;
+  margin: auto 0;
+}
+
+.bottom__right {
+  display: flex;
+  gap: 21px;
 }

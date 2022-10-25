@@ -1,14 +1,22 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import "./index.css";
-import UserIcon from "../../assets/utils/user_icon.png";
 
-interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {}
+interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+  theme: "default" | "outline" | "red";
+}
+
 const Button = (props: IButton) => {
-  return (
-    <button className="default__button" {...props}>
-      <img src={UserIcon}></img>
-      Minha Online
-    </button>
-  );
+  switch (props.theme) {
+    case "outline":
+      return <button className="outline__button" {...props}></button>;
+      break;
+    case "red":
+      return <button className="red__button" {...props}></button>;
+      break;
+    default:
+      return <button className="default__button" {...props}></button>;
+      break;
+  }
 };
 export default Button;

@@ -2,6 +2,7 @@ import "./index.css";
 import ThemeIcon from "../../assets/icons/theme_icon.png";
 import ChevronDownIcon from "../../assets/utils/chevrondown_icon.png";
 import OnlineIcon from "../../assets/icons/icon_onlinetelecom.png";
+import UserIcon from "../../assets/utils/user_icon.png";
 import Button from "../Buttons";
 
 const NavBar = () => {
@@ -29,7 +30,11 @@ const NavBar = () => {
               <a>PARA EMPRESAS</a>
             </div>
             <div className="bottom__right">
-              <Button>Minha Online</Button>
+              <Button theme="red">Assine já</Button>
+              <Button theme="outline">2ª Via</Button>
+              <Button theme="default">
+                <img src={UserIcon}></img>Minha Online
+              </Button>
             </div>
           </div>
         </div>
