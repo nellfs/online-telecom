@@ -18,7 +18,6 @@ const LocationOptions = (currentState: IMap) => {
     const cities = locations.states[currentState.state]
       .filter((val: string) => {
         if (searchLocation == "") return val;
-
         if (val.toLowerCase().includes(searchLocation.toLowerCase()))
           return val;
       })
@@ -45,7 +44,6 @@ const LocationOptions = (currentState: IMap) => {
             placeholder="Digite sua cidade"
           ></input>
         </div>
-        {/* {locations.states[`${currentState.state}`]} */}
         <ul className="location__options">
           <a>{getCities()}</a>
         </ul>

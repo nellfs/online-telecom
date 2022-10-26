@@ -30,6 +30,11 @@ const NavBar = () => {
               <a>PARA EMPRESAS</a>
             </div>
             <div className="bottom__right">
+              <div className="bottom__right-options">
+                <div>Produtos e serviços</div>
+                <div>Institucional</div>
+                <div>Blog</div>
+              </div>
               <Button theme="red">Assine já</Button>
               <Button theme="outline">2ª Via</Button>
               <Button theme="default">

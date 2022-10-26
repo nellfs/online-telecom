@@ -3,6 +3,7 @@
   z-index: 200;
   width: 100%;
   color: var(--color-dark);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 }
 
 .navbar__top {
@@ -84,4 +85,12 @@
 .bottom__right {
   display: flex;
   gap: 21px;
+}
+
+.bottom__right-options {
+  font-weight: 400;
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  margin: auto;
 }
