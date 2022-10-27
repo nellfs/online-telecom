@@ -6,15 +6,15 @@ import UserIcon from "../../assets/utils/user_icon.png";
 import Button from "../Buttons";
 import location_finder from "../../utils/location_fixer.json";
 import { useParams } from "react-router-dom";
-import { CitiesWithFix } from "../../types/map";
+import { Cities } from "../../types/map";
 import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [realCity, setRealCity] = useState<string>();
-  const { city } = useParams<{ city: CitiesWithFix }>(); // This is necessary because I'm not using a real API
+  const { city } = useParams<{ city: Cities }>(); // This is necessary because I'm not using a real API
 
   useEffect(() => {
-    setRealCity(city);
+    if (city) setRealCity(location_finder[city]);
   }, [city]);
 
   return (
