@@ -60,6 +60,7 @@
 }
 
 .location__options li {
+  color: var(--color-light);
   margin-bottom: 28px;
 }
 

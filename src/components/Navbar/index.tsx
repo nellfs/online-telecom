@@ -4,8 +4,19 @@ import ChevronDownIcon from "../../assets/utils/chevrondown_icon.png";
 import OnlineIcon from "../../assets/icons/icon_onlinetelecom.png";
 import UserIcon from "../../assets/utils/user_icon.png";
 import Button from "../Buttons";
+import location_finder from "../../utils/location_fixer.json";
+import { useParams } from "react-router-dom";
+import { CitiesWithFix } from "../../types/map";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
+  const [realCity, setRealCity] = useState<string>();
+  const { city } = useParams<{ city: CitiesWithFix }>(); // This is necessary because I'm not using a real API
+
+  useEffect(() => {
+    setRealCity(city);
+  }, [city]);
+
   return (
     <div className="navbar">
       <div className="navbar__top">
@@ -16,7 +27,7 @@ const NavBar = () => {
             <img src={ThemeIcon}></img>
           </div>
           <div className="navbar__top-right">
-            <div>Varjota-CE</div>
+            <div>{realCity}</div>
             <img src={ChevronDownIcon}></img>
           </div>
         </div>
