@@ -5,7 +5,7 @@ import OnlineIcon from "../../assets/icons/icon_onlinetelecom.png";
 import UserIcon from "../../assets/utils/user_icon.png";
 import Button from "../Buttons";
 import location_finder from "../../utils/location_fixer.json";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Cities } from "../../types/map";
 import { useEffect, useState } from "react";
 
@@ -34,7 +34,9 @@ const NavBar = () => {
       </div>
       <div className="navbar__bottom">
         <div className="container__bottom">
-          <img src={OnlineIcon}></img>
+          <Link to={"/"}>
+            <img src={OnlineIcon} alt={"Online Telecom"}></img>
+          </Link>
           <div className="navbar__bottom-left">
             <div className="bottom__left">
               <a>PARA VOCÊ</a>
