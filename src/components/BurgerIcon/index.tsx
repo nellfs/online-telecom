@@ -12,13 +12,11 @@ const BurguerIcon = () => {
   };
 
   return (
-    <div className="burger__container">
-      <button className="burgericon" onClick={() => changeBar()}>
-        <div className={`burgerbar1${active}`} />
-        <div className={`burgerbar2${active}`}></div>
-        <div className={`burgerbar3${active}`}></div>
-      </button>
-    </div>
+    <button className="burgericon" onClick={() => changeBar()}>
+      <div className={`burgerbar1${active}`} />
+      <div className={`burgerbar2${active}`}></div>
+      <div className={`burgerbar3${active}`}></div>
+    </button>
   );
 };
 

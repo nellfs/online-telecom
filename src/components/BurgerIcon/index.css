@@ -1,10 +1,3 @@
-.burger__container {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  display: flex;
-}
-
 .burgericon {
   position: relative;
   display: flex;
@@ -18,65 +11,47 @@
   height: 25px;
 }
 
-.burgerbar1 {
+.burgerbar1,
+.burgerbar2,
+.burgerbar3,
+.burgerbar1-active,
+.burgerbar2-active,
+.burgerbar3-active {
   position: absolute;
-  left: 0px;
-  top: 4px;
   transition: all 0.3s ease;
   width: 25px;
   height: 3px;
   background-color: var(--color-primary);
 }
+
+.burgerbar1 {
+  left: 0px;
+  top: 4px;
+}
 .burgerbar2 {
-  position: absolute;
   left: 0px;
   top: 11px;
-  transition: all 0.3s ease;
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-primary);
 }
 
 .burgerbar3 {
-  position: absolute;
   left: 0px;
   bottom: 4px;
-  transition: all 0.3s ease;
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-primary);
 }
 
 .burgerbar1-active {
-  position: absolute;
-  margin: auto;
   left: 0px;
   top: 4px;
-  transition: all 0.3s ease;
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-primary);
   transform: translateY(7px) rotate(45deg);
 }
 
 .burgerbar2-active {
-  position: absolute;
   left: 0px;
   top: 11px;
-  transition: all 0.3s ease;
-  width: 25px;
-  height: 3px;
   background-color: transparent;
 }
 
 .burgerbar3-active {
-  position: absolute;
-  margin: auto;
   left: 0px;
   bottom: 4px;
-  transition: all 0.3s ease;
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-primary);
   transform: translateY(-7px) rotate(-45deg);
 }
