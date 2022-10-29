@@ -18,7 +18,7 @@
 .burgerbar2-active,
 .burgerbar3-active {
   position: absolute;
-  transition: all 0.3s ease;
+  transition: all 0.2s linear;
   width: 25px;
   height: 3px;
   background-color: var(--color-primary);
