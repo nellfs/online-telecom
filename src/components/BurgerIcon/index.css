@@ -1,0 +1,82 @@
+.burger__container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+}
+
+.burgericon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.burgerbar1 {
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+.burgerbar2 {
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+
+.burgerbar3 {
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+
+.burgerbar1-active {
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  top: 4px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burgerbar2-active {
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: transparent;
+}
+
+.burgerbar3-active {
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  bottom: 4px;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+  transform: translateY(-7px) rotate(-45deg);
+}

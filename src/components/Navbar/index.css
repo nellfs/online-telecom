@@ -66,7 +66,7 @@
 .container__bottom img {
   margin: auto;
   width: 100px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .navbar__bottom-left {
@@ -83,6 +83,12 @@
   margin: auto 0;
 }
 
+.bottom__left-options {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
 .bottom__right {
   display: flex;
   gap: 21px;
@@ -94,4 +100,29 @@
   gap: 20px;
   white-space: nowrap;
   margin: auto;
+}
+
+.bottom__right-mobile {
+  display: none;
+}
+
+@media (max-width: 1090px) {
+  .navbar__bottom {
+    height: 111.625px;
+  }
+  .bottom__left-options,
+  .bottom__right {
+    display: none;
+  }
+  .bottom__right-mobile {
+    right: 0px;
+    display: block;
+  }
+  .container__bottom {
+    padding: 0 5%;
+  }
+  .container__bottom img {
+    width: 90px;
+    margin-right: 40px;
+  }
 }

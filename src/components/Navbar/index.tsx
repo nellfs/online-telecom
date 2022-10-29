@@ -8,6 +8,7 @@ import location_finder from "../../utils/location_fixer.json";
 import { Link, useParams } from "react-router-dom";
 import { Cities } from "../../types/map";
 import { useEffect, useState } from "react";
+import BurguerIcon from "../BurgerIcon";
 
 const NavBar = () => {
   const [realCity, setRealCity] = useState<string>();
@@ -34,13 +35,15 @@ const NavBar = () => {
       </div>
       <div className="navbar__bottom">
         <div className="container__bottom">
-          <Link to={"/"}>
-            <img src={OnlineIcon} alt={"Online Telecom"}></img>
-          </Link>
           <div className="navbar__bottom-left">
             <div className="bottom__left">
-              <a>PARA VOCÊ</a>
-              <a>PARA EMPRESAS</a>
+              <Link to={"/"}>
+                <img src={OnlineIcon} alt={"Online Telecom"}></img>
+              </Link>
+              <div className="bottom__left-options">
+                <a>PARA VOCÊ</a>
+                <a>PARA EMPRESAS</a>
+              </div>
             </div>
             <div className="bottom__right">
               <div className="bottom__right-options">
@@ -53,6 +56,9 @@ const NavBar = () => {
               <Button theme="default">
                 <img src={UserIcon}></img>Minha Online
               </Button>
+            </div>
+            <div className="bottom__right-mobile" style={{ margin: "auto 0" }}>
+              <BurguerIcon></BurguerIcon>
             </div>
           </div>
         </div>
