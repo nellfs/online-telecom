@@ -1,9 +1,14 @@
 .navbar {
   position: fixed;
+  top: 0;
   z-index: 200;
   width: 100%;
   color: var(--color-dark);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
+}
+
+.navbar__block {
+  height: 157.594px;
 }
 
 .navbar__top {
@@ -107,6 +112,9 @@
 }
 
 @media (max-width: 1090px) {
+  .navbar__block {
+    height: 149.625px;
+  }
   .navbar__bottom {
     height: 111.625px;
   }
