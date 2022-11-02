@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8888;
+}
+
+.carousel img {
+  width: 100%;
+}

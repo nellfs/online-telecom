@@ -1,11 +1,13 @@
 import Banners from "../../assets/banners/desktop/online_alimentos.png";
+import "./index.css";
 
 const Carousel = () => {
   return (
-    <img
-      src={Banners}
-      style={{ display: "block", height: "355px", left: "1" }}
-    ></img>
+    <div className="carousel">
+      <img src={Banners}></img>
+
+      <img src={Banners}></img>
+    </div>
   );
 };
 

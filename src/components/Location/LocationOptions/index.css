@@ -66,10 +66,11 @@
 
 .location__options::-webkit-scrollbar {
   width: 5px;
+  background-color: transparent;
 }
 
 /* Track */
-::-webkit-scrollbar-thumb {
+.location__options::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid var(--color-secondary);
 }
