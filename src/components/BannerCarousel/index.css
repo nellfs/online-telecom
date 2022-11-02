@@ -1,19 +1,12 @@
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #8888;
-}
-
-.carousel {
-}
-
-.carousel__inner {
-  display: flex;
+.carousel__item {
+  display: block;
 }
 
 .carousel img {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
   width: 80%;
 }
