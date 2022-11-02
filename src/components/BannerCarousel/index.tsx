@@ -1,63 +1,13 @@
 import "./index.css";
-
-import online_alimentos_d from "../../assets/banners/desktop/online_alimentos.png";
-import online_combo_d from "../../assets/banners/desktop/online_combo.png";
-import online_esportes_d from "../../assets/banners/desktop/online_esportes.png";
-import online_leitura_d from "../../assets/banners/desktop/online_leitura.png";
-import online_music_d from "../../assets/banners/desktop/online_music.png";
-import online_video01_d from "../../assets/banners/desktop/online_video01.png";
-import online_video02_d from "../../assets/banners/desktop/online_video02.png";
-
-import online_alimentos_m from "../../assets/banners/mobile/online_alimentos.png";
-import online_combo_m from "../../assets/banners/mobile/online_combo.png";
-import online_esportes_m from "../../assets/banners/mobile/online_esportes.png";
-import online_leitura_m from "../../assets/banners/mobile/online_leitura.png";
-import online_music_m from "../../assets/banners/mobile/online_music.png";
-import online_video01_m from "../../assets/banners/mobile/online_video01.png";
-import online_video02_m from "../../assets/banners/mobile/online_video02.png";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import { Carousel } from "react-responsive-carousel";
-import { useEffect, useRef, useState } from "react";
-
-const desktop_banners = [
-  online_alimentos_d,
-  online_combo_d,
-  online_esportes_d,
-  online_leitura_d,
-  online_music_d,
-  online_video01_d,
-  online_video02_d,
-];
-
-const mobile_banners = [
-  online_alimentos_m,
-  online_combo_m,
-  online_esportes_m,
-  online_leitura_m,
-  online_music_m,
-  online_video01_m,
-  online_video02_m,
-];
+import { desktop_banner, mobile_banner } from "../../utils/banners";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const BannerCarousel = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const initial_banner = windowWidth < 650 ? mobile_banners : desktop_banners;
-  const banner = useRef(initial_banner);
-
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-    if (window.innerWidth < 650) banner.current = mobile_banners;
-    else banner.current = desktop_banners;
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const banner =
+    useWindowWidth() >= 580 ? desktop_banner.banners : mobile_banner.banners;
 
   return (
     <Carousel
@@ -68,7 +18,8 @@ const BannerCarousel = () => {
       infiniteLoop={true}
       showThumbs={false}
       emulateTouch={true}
-      renderIndicator={(clickHandler, isSelected, index, label) => {
+      showArrows={false}
+      renderIndicator={(clickHandler, isSelected) => {
         const dot = {
           width: "12px",
           height: "12px",
@@ -94,8 +45,8 @@ const BannerCarousel = () => {
         );
       }}
     >
-      {banner.current.map((banner_img, n) => (
-        <div key={n} className="carousel__item">
+      {banner.map((banner_img, n) => (
+        <div key={n}>
           <img src={banner_img} alt="banner"></img>
         </div>
       ))}

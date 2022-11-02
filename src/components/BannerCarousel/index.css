@@ -1,7 +1,3 @@
-.carousel__item {
-  display: block;
-}
-
 .carousel img {
   user-select: none;
   -moz-user-select: none;
