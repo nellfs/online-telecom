@@ -11,7 +11,14 @@ const Home = () => {
       <div className="plans">
         <div className="container">
           <div className="plans__header">
-            <h3>Melhores ofertar para você</h3>
+            <h3 className="plans__title">Melhores ofertar para você</h3>
+            <div className="plans__subtitle">
+              <p>
+                Planos de Internet de ultravelocidade + Wi-Fi e instalação
+                grátis
+              </p>
+              <a>Veja todos os planos</a>
+            </div>
           </div>
         </div>
       </div>
