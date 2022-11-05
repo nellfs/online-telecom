@@ -11,7 +11,7 @@ const Home = () => {
       <div className="plans">
         <div className="container">
           <div className="plans__header">
-            <h3 className="plans__title">Melhores ofertar para você</h3>
+            <h3 className="plans__title">Melhores ofertas para você</h3>
             <div className="plans__subtitle">
               <p>
                 Planos de Internet de ultravelocidade + Wi-Fi e instalação
