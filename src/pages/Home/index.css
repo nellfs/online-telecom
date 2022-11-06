@@ -22,8 +22,7 @@
 }
 
 .plans .container {
-  width: 100%;
-  max-width: 1345px;
+  max-width: 1310px;
   margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 1.9rem;
 }
 
 .plans__title {
@@ -62,7 +61,7 @@
   border-radius: 6px;
   font-family: Montserrant;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
   color: var(--color-dark);
   transition: background 0.4s;
 }
@@ -73,6 +72,10 @@
 }
 
 @media (max-width: 900px) {
+  .plans__header {
+    display: flex;
+  }
+
   .plans__subtitle {
     flex-direction: column;
   }
