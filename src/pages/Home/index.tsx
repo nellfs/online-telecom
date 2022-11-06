@@ -1,5 +1,6 @@
 import BannerCarousel from "../../components/BannerCarousel";
 import NavBar from "../../components/Navbar";
+import PlanCard from "../../components/PlanCard";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import "./index.css";
 
@@ -21,6 +22,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <PlanCard speed={100} description={"fibra"}></PlanCard>
       </div>
     </div>
   );

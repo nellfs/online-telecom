@@ -1,0 +1,22 @@
+.plan__card {
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.plan__card-top {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.plan__card-top h1 {
+  font-family: "Arlon", sans-serif;
+  margin: 0 auto;
+  color: var(--color-primary);
+}

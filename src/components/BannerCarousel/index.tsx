@@ -19,6 +19,8 @@ const BannerCarousel = () => {
       showThumbs={false}
       emulateTouch={true}
       showArrows={false}
+      preventMovementUntilSwipeScrollTolerance={true}
+      swipeScrollTolerance={50}
       renderIndicator={(clickHandler, isSelected) => {
         const dot = {
           width: "12px",
