@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "ArlonBold";
+  src: local("ArlonBold"),
+    url("../../fonts/Arlon/Arlon-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ArlonRegular";
+  src: local("ArlonRegular"),
+    url("../../fonts/Arlon/Arlon-Regular.ttf") format("truetype");
+}
+
 .plan__card {
   width: 400px;
   height: 400px;
@@ -12,11 +25,37 @@
 .plan__card-top {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 40px 40px 20px 40px;
+  border-bottom: 5px solid red;
 }
 
 .plan__card-top h1 {
-  font-family: "Arlon", sans-serif;
+  font-size: 3em;
+  font-family: "ArlonBold";
+  font-weight: 900;
   margin: 0 auto;
   color: var(--color-primary);
+}
+
+.plan__card-top h2 {
+  font-family: "ArlonRegular";
+  font-size: 1.2em;
+  color: var(--color-grey);
+  margin: auto;
+}
+
+.plan__card .wifi-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: var(--color-dark);
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Roboto";
+}
+
+.plan__card .wifi-icon img {
+  width: 20px;
 }

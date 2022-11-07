@@ -1,5 +1,6 @@
 import "./index.css";
-import "../../fonts/Arlon/Arlon-Regular.ttf";
+import "../../fonts/Arlon/Arlon-Bold.ttf";
+import WifiIcon from "../../assets/icons/wifi_icon.png";
 
 interface IPlanCard {
   speed: number;
@@ -24,6 +25,9 @@ const PlanCard = (props: IPlanCard) => {
             ? "Internet fibra + aplicativos"
             : "de internet rádio"}
         </h2>
+      </div>
+      <div className="wifi-icon">
+        <img src={WifiIcon} className="wifi-icon"></img> Wi-Fi
       </div>
     </div>
   );
