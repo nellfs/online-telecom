@@ -26,8 +26,10 @@ const PlanCard = (props: IPlanCard) => {
             : "de internet rádio"}
         </h2>
       </div>
-      <div className="wifi-icon">
-        <img src={WifiIcon} className="wifi-icon"></img> Wi-Fi
+      <div className="plan__card-center">
+        <div className="wifi-icon">
+          <img src={WifiIcon} className="wifi-icon"></img> Wi-Fi
+        </div>
       </div>
     </div>
   );
