@@ -12,9 +12,10 @@
 }
 
 .plan__card {
-  width: 400px;
+  width: 80%;
   height: 400px;
-
+  border: 1px #ccc solid;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -23,11 +24,6 @@
 .plan__card-top {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
   padding: 40px 40px 20px 40px;
   border-bottom: 5px solid red;
 }
@@ -48,12 +44,6 @@
 }
 
 .plan__card-center {
-  height: 100%;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
   background-color: var(--color-grey-lighter);
 }
 
