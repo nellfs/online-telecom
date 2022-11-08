@@ -1,7 +1,6 @@
 import BannerCarousel from "../../components/BannerCarousel";
 import NavBar from "../../components/Navbar";
 import PlanCard from "../../components/PlanCard";
-import useWindowWidth from "../../hooks/useWindowWidth";
 import "./index.css";
 
 const Home = () => {
@@ -34,54 +33,7 @@ const Home = () => {
             description={"fibra"}
             bonus={["tocalivros", "nordestefc", "bebanca"]}
             price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
-          />
-          <PlanCard
-            speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
+            bonus_info={true}
           />
         </div>
       </div>

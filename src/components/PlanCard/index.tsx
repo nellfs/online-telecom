@@ -8,6 +8,7 @@ interface IPlanCard {
   description: "fibra" | "radio";
   bonus?: BonusOptions[];
   price: string;
+  bonus_info?: boolean;
 }
 
 const PlanCard = (props: IPlanCard) => {
@@ -29,6 +30,12 @@ const PlanCard = (props: IPlanCard) => {
         {props.bonus?.map((bonus, n) => {
           return <PlanButton key={n} bonusType={bonus}></PlanButton>;
         })}
+
+        {props.bonus_info ? (
+          <span className="plan__card-bonus-info">Informações adicionais</span>
+        ) : (
+          <div></div>
+        )}
       </div>
       <div className="plan__card-bottom">
         <h1>R${props.price}</h1>

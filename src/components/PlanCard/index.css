@@ -61,7 +61,18 @@
 }
 
 .plan__card-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-grey-lighter);
+}
+
+.plan__card-center span {
+  margin-top: 10px;
+  color: var(--color-dark);
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .plan__card .wifi-icon {
