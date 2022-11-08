@@ -11,9 +11,26 @@
     url("../../fonts/Arlon/Arlon-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "GothamBold";
+  src: local("GothamBold"),
+    url("../../fonts/Gotham/Gotham-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamRegular";
+  src: local("GothamRegular"),
+    url("../../fonts/Gotham/Gotham-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: local("GothamMedium"),
+    url("../../fonts/Gotham/Gotham-Medium.otf") format("truetype");
+}
+
 .plan__card {
-  width: 80%;
-  height: 400px;
+  width: 100%;
   border: 1px #ccc solid;
   border-radius: 6px;
   display: flex;
@@ -24,7 +41,7 @@
 .plan__card-top {
   display: flex;
   flex-direction: column;
-  padding: 40px 40px 20px 40px;
+  padding: 34px 20px 20px 20px;
   border-bottom: 5px solid red;
 }
 
@@ -62,4 +79,40 @@
   position: relative;
   width: 21px;
   margin-right: 10px;
+}
+
+.plan__card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: "GothamBold";
+  color: var(--color-dark);
+}
+
+.plan__card-bottom h1 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 2em;
+}
+
+.plan__card-bottom span {
+  font-family: "GothamMedium";
+  font-size: 1.2em;
+}
+
+.plan__card-end {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.plan__card-end a {
+  padding: 18px;
+  display: block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: "GothamBold";
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 6px;
 }

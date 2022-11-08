@@ -1,8 +1,16 @@
 .plan__button {
+  display: flex;
+  align-items: center;
   margin: 2px auto;
-  width: 80%;
-  height: 48px;
   background-color: var(--color-light);
   border-bottom: solid #0004 2px;
   border-radius: 0 0 10px 0;
+  padding: 8px 16px;
+  width: 80%;
+  height: 32px;
+}
+
+.plan__button img {
+  width: 8em;
+  max-width: 100%;
 }

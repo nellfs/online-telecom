@@ -22,7 +22,68 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <PlanCard speed={100} description={"fibra"}></PlanCard>
+        <div className="plans__container">
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+        </div>
       </div>
     </div>
   );

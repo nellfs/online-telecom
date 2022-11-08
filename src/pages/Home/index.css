@@ -73,6 +73,16 @@
   color: var(--color-light);
 }
 
+.plans__container {
+  max-width: 1240px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
 @media (max-width: 900px) {
   .plans .container {
     padding: 0 0rem;

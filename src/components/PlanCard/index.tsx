@@ -1,19 +1,13 @@
 import "./index.css";
-import "../../fonts/Arlon/Arlon-Bold.ttf";
 import WifiIcon from "../../assets/icons/wifi_icon.png";
-import PlanButton from "../PlanButton";
+import PlanButton, { BonusOptions } from "../PlanButton";
+import Button from "../Buttons";
 
 interface IPlanCard {
   speed: number;
   description: "fibra" | "radio";
-
-  bonus?: {
-    tocalivros?: true;
-    nordesteFC?: true;
-    bebanca?: true;
-    deezer?: true;
-    watchbr?: true;
-  };
+  bonus?: BonusOptions[];
+  price: string;
 }
 
 const PlanCard = (props: IPlanCard) => {
@@ -31,7 +25,17 @@ const PlanCard = (props: IPlanCard) => {
         <div className="wifi-icon">
           <img src={WifiIcon} alt="sinal" className="wifi-icon"></img> Wi-Fi
         </div>
-        <PlanButton bonusType="none"></PlanButton>
+
+        {props.bonus?.map((bonus, n) => {
+          return <PlanButton key={n} bonusType={bonus}></PlanButton>;
+        })}
+      </div>
+      <div className="plan__card-bottom">
+        <h1>R${props.price}</h1>
+        <span>/mês</span>
+      </div>
+      <div className="plan__card-end">
+        <a>ASSINE JÁ!</a>
       </div>
     </div>
   );

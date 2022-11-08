@@ -16,7 +16,7 @@ const BonusPlans = [
   BonusWatchbr,
 ];
 
-type BonusOptions =
+export type BonusOptions =
   | "none"
   | "bebanca"
   | "deezer"
@@ -25,7 +25,7 @@ type BonusOptions =
   | "tocalivros"
   | "watchbr";
 
-interface IPlanButton {
+export interface IPlanButton {
   bonusType: BonusOptions;
 }
 
