@@ -35,6 +35,47 @@ const Home = () => {
             price={"79,90"}
             bonus_info={true}
           />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros", "nordestefc", "bebanca", "deezer"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
         </div>
       </div>
     </div>

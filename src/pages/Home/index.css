@@ -74,13 +74,25 @@
 }
 
 .plans__container {
-  max-width: 1240px;
-  display: grid;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: flex-start;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 21%);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+@media (max-width: 1250px) {
+  .plans__container {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+
+@media (max-width: 920px) {
+  .plans__container {
+    grid-template-columns: repeat(2, 46%);
+  }
 }
 
 @media (max-width: 900px) {
@@ -109,6 +121,10 @@
 }
 
 @media (max-width: 600px) {
+  .plans__container {
+    grid-template-columns: repeat(1, 90%);
+  }
+
   .plans__header {
     width: 95%;
   }
