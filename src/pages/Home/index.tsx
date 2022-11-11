@@ -72,7 +72,7 @@ const Home = () => {
           <PlanCard
             speed={100}
             description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "deezer"]}
+            bonus={["tocalivros", "nordestefc", "bebanca", "deezer", "none"]}
             price={"79,90"}
             bonus_info={true}
           />
