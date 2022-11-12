@@ -64,13 +64,17 @@
 .plan__card-center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 100%;
   background-color: var(--color-grey-lighter);
 }
 
 .plan__card-center span {
-  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-top: 16px;
   color: var(--color-dark);
   font-weight: 400;
   text-decoration: underline;
@@ -114,7 +118,9 @@
 }
 
 .plan__card-end {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   padding: 0 1rem 1rem 1rem;
 }
 

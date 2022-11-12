@@ -38,7 +38,7 @@ const Home = () => {
           <PlanCard
             speed={100}
             description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
+            bonus={["tocalivros", "nordestefc"]}
             price={"79,90"}
             bonus_info={true}
           />
@@ -72,9 +72,22 @@ const Home = () => {
           <PlanCard
             speed={100}
             description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "deezer", "none"]}
+            bonus={["tocalivros", "nordestefc", "bebanca", "deezer"]}
             price={"79,90"}
             bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros"]}
+            price={"79,90"}
+            bonus_info={true}
+          />
+          <PlanCard
+            speed={100}
+            description={"fibra"}
+            bonus={["tocalivros"]}
+            price={"79,90"}
           />
         </div>
       </div>

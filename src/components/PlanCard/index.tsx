@@ -26,22 +26,16 @@ const PlanCard = (props: IPlanCard) => {
         <div className="wifi-icon">
           <img src={WifiIcon} alt="sinal" className="wifi-icon"></img> Wi-Fi
         </div>
-
         {props.bonus?.map((bonus, n) => {
           return <PlanButton key={n} bonusType={bonus}></PlanButton>;
         })}
-
-        {props.bonus_info ? (
-          <span className="plan__card-bonus-info">Informações adicionais</span>
-        ) : (
-          <div></div>
-        )}
-      </div>
-      <div className="plan__card-bottom">
-        <h1>R${props.price}</h1>
-        <span>/mês</span>
+        {props.bonus_info ? <span>Informações adicionais</span> : <div></div>}
       </div>
       <div className="plan__card-end">
+        <div className="plan__card-bottom">
+          <h1>R${props.price}</h1>
+          <span>/mês</span>
+        </div>
         <a>ASSINE JÁ!</a>
       </div>
     </div>
