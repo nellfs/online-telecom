@@ -16,6 +16,13 @@
     url("../../fonts/Gotham/Gotham-Medium.otf") format("truetype");
 }
 
+.page-home {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .background {
   position: absolute;
   top: 0px;
