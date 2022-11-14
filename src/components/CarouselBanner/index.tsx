@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { desktop_banner, mobile_banner } from "../../utils/banners";
 import useWindowWidth from "../../hooks/useWindowWidth";
 
-const BannerCarousel = () => {
+const CarouselBanner = () => {
   const banner =
     useWindowWidth() >= 580 ? desktop_banner.banners : mobile_banner.banners;
 
@@ -56,4 +56,4 @@ const BannerCarousel = () => {
   );
 };
 
-export default BannerCarousel;
+export default CarouselBanner;

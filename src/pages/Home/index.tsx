@@ -1,7 +1,11 @@
-import BannerCarousel from "../../components/BannerCarousel";
+import BannerCarousel from "../../components/CarouselBanner";
 import NavBar from "../../components/Navbar";
 import PlanCard from "../../components/PlanCard";
+
+import TelecoImage from "../../assets/images/bg_teleco_tv.png";
+
 import "./index.css";
+import Banner from "../../components/Banner";
 
 const Home = () => {
   return (
@@ -66,7 +70,29 @@ const Home = () => {
           <PlanCard speed={14} description={"radio"} price={"99,90"} />
         </div>
       </div>
-      update
+
+      <div className="new_services_container">
+        <div className="text">
+          <div>
+            <h2>Novos serviços Online</h2>
+            <p>
+              Um mundo de possibilidades de entretenimento em vídeo que satisfaz
+              os gostos de toda a família. Desde desenhos animados para a
+              criançada, até o futebol de domingo.
+            </p>
+          </div>
+          <div>
+            <h2>Como Funciona?</h2>
+            <p>
+              Você pode conectar seus aparelhos como televisores, computadores e
+              smartphones direto nos seus serviços preferidos e aproveitar as
+              melhores soluções de entretenimento.
+            </p>
+          </div>
+        </div>
+        <img src={TelecoImage} alt="teleco assistindo tv" />
+      </div>
+      <Banner type="combo"></Banner>
     </div>
   );
 };

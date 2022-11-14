@@ -28,7 +28,6 @@
   src: local("GothamMedium"),
     url("../../fonts/Gotham/Gotham-Medium.otf") format("truetype");
 }
-
 .plan__card {
   width: 100%;
   height: 100%;
