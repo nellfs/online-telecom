@@ -5,7 +5,7 @@ import PlanCard from "../../components/PlanCard";
 import TelecoImage from "../../assets/images/bg_teleco_tv.png";
 
 import "./index.css";
-import Banner from "../../components/Banner";
+import Banner from "../../components/LargeCard";
 
 const Home = () => {
   return (

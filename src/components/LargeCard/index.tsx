@@ -1,6 +1,5 @@
-import React from "react";
-import ComboBanner from "./ComboBanner";
-import NewsletterBanner from "./NewsletterBanner";
+import ComboBanner from "./ComboCard";
+import NewsletterBanner from "./NewsletterCard";
 
 interface IBanner {
   type: "combo" | "newsletter";
