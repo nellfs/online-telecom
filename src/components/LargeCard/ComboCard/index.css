@@ -1,10 +1,12 @@
 .combo {
   width: 100%;
-  max-width: 1240px;
   margin: 120px auto 50px;
 }
 
 .combo .container {
+  margin: auto;
+  max-width: 1240px;
+  padding: 0 20px;
   display: flex;
   justify-content: left;
   align-items: center;
