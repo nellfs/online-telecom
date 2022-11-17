@@ -16,13 +16,6 @@
     url("../../fonts/Gotham/Gotham-Medium.otf") format("truetype");
 }
 
-.page-home {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .background {
   position: absolute;
   top: 0px;
@@ -155,7 +148,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 950px) {
   .plans__container {
     grid-template-columns: repeat(2, 46%);
   }

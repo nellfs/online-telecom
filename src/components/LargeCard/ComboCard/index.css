@@ -1,6 +1,7 @@
 .combo {
   width: 100%;
   max-width: 1240px;
+  margin: 120px auto 50px;
 }
 
 .combo .container {
@@ -12,6 +13,7 @@
 }
 
 .combo .container img {
+  margin: auto;
   border-radius: 12px;
   width: 100%;
 }

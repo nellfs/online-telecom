@@ -12,6 +12,7 @@ const ComboBanner = () => {
             Combo de TV, internet e telefone para você com preços especiais!
           </p>
         </div>
+        <div className="combo__button">Monte agora</div>
       </div>
     </div>
   );
