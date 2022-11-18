@@ -67,7 +67,6 @@ const Home = () => {
           <PlanCard speed={5} description={"radio"} price={"59,90"} />
           <PlanCard speed={7} description={"radio"} price={"72,90"} />
           <PlanCard speed={10} description={"radio"} price={"84,90"} />
-          <PlanCard speed={14} description={"radio"} price={"99,90"} />
         </div>
       </div>
 
