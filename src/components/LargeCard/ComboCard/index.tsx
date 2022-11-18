@@ -5,14 +5,13 @@ const ComboBanner = () => {
   return (
     <div className="combo">
       <div className="container">
-        {/* <img src={ComboBannerImage} /> */}
         <div className="combo__text">
           <h3>Monte seu combo</h3>
           <p>
-            Combo de TV, internet e telefone para você com preços especiais!
+            Combos de TV, internet e telefone para você com preços especiais!
           </p>
         </div>
-        {/* <div className="combo__button">Monte agora</div> */}
+        <div className="combo__button">Monte agora</div>
       </div>
     </div>
   );

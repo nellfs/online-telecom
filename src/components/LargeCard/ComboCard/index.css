@@ -6,7 +6,10 @@
 }
 
 .combo .container {
+  display: flex;
+  align-items: center;
   width: 100%;
+  padding: 0px 20px;
   height: 160px;
   border-radius: 12px;
   background-position: right;
@@ -15,22 +18,81 @@
 }
 
 .combo__text {
-  padding: 0 20px;
-  top: 10px;
-  position: absolute;
+  margin-right: 60px;
+  color: white;
 }
-.combo .container h3 {
+.combo__text h3 {
+  margin-top: 0px;
   font-size: 36px;
   font-family: "Montserrat";
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
-.combo .container p {
-  display: flex;
+
+.combo__text p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.combo__button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.4s, color 0.4s;
+}
+
+.combo__button:hover {
+  background-color: white;
 }
 
 @media (max-width: 1200px) {
   .combo .container {
-    height: 240px;
+    height: 244px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .combo__text h3 {
+    margin-top: 8px;
+  }
+
+  .combo__text p {
+    max-width: 310px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .combo .container {
+    height: 300px;
+    padding-top: 20px;
+    justify-content: start;
+    background-image: url(../../../assets/images/combo-image-mobile.png);
+  }
+
+  .combo__text h3 {
+    margin-top: 20px;
+    font-size: 36px;
+  }
+
+  .combo__text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .combo .container {
+    height: 340px;
+  }
+
+  .combo__text h3 {
+    font-size: 30px;
   }
 }
