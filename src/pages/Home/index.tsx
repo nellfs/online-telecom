@@ -1,12 +1,12 @@
-import BannerCarousel from "../../components/CarouselBanner";
-import NavBar from "../../components/Navbar";
-import PlanCard from "../../components/PlanCard";
+import BannerCarousel from '../../components/CarouselBanner';
+import NavBar from '../../components/Navbar';
+import PlanCard from '../../components/PlanCard';
 
-import TelecoImage from "../../assets/images/bg_teleco_tv.png";
+import TelecoImage from '../../assets/images/bg_teleco_tv.png';
 
-import "./index.css";
-import Banner from "../../components/LargeCard";
-import FAQ from "../../components/FAQ";
+import './index.css';
+import Banner from '../../components/LargeCard';
+import FAQ from '../../components/FAQ';
 
 const Home = () => {
   return (
@@ -29,45 +29,45 @@ const Home = () => {
         <div className="plans__container">
           <PlanCard
             speed={100}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"79,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca']}
+            price={'79,90'}
           />
           <PlanCard
             speed={300}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca"]}
-            price={"89,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca']}
+            price={'89,90'}
           />
           <PlanCard
             speed={300}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "deezer"]}
-            price={"99,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca', 'deezer']}
+            price={'99,90'}
             bonus_info={true}
           />
           <PlanCard
             speed={500}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "watchbr"]}
-            price={"109,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca', 'watchbr']}
+            price={'109,90'}
           />
           <PlanCard
             speed={500}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "watchbr", "deezer"]}
-            price={"119,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca', 'watchbr', 'deezer']}
+            price={'119,90'}
             bonus_info={true}
           />
           <PlanCard
             speed={600}
-            description={"fibra"}
-            bonus={["tocalivros", "nordestefc", "bebanca", "watchbr", "hbomax"]}
-            price={"129,90"}
+            description={'fibra'}
+            bonus={['tocalivros', 'nordestefc', 'bebanca', 'watchbr', 'hbomax']}
+            price={'129,90'}
           />
-          <PlanCard speed={5} description={"radio"} price={"59,90"} />
-          <PlanCard speed={7} description={"radio"} price={"72,90"} />
-          <PlanCard speed={10} description={"radio"} price={"84,90"} />
+          <PlanCard speed={5} description={'radio'} price={'59,90'} />
+          <PlanCard speed={7} description={'radio'} price={'72,90'} />
+          <PlanCard speed={10} description={'radio'} price={'84,90'} />
         </div>
       </div>
 

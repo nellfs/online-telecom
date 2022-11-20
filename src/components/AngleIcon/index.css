@@ -1,0 +1,11 @@
+.angleicon {
+  color: var(--color-primary);
+}
+.angledirection-up {
+  transform: rotate(-3.142rad);
+  transition: all 0.4s;
+}
+
+.angledirection-down {
+  transition: all 0.4s;
+}

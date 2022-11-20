@@ -1,0 +1,33 @@
+.accordion {
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.accordion__question {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.accordion__answer {
+  margin: 20px 0;
+  color: #666;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  animation-name: fadein;
+  animation-duration: 0.7s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
