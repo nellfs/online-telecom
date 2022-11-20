@@ -1,5 +1,4 @@
-import "./index.css";
-import ComboBannerImage from "../../../assets/images/combo-image-desktop.png";
+import "./ComboCard.css";
 
 const ComboBanner = () => {
   return (

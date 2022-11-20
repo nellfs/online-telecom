@@ -6,6 +6,7 @@ import TelecoImage from "../../assets/images/bg_teleco_tv.png";
 
 import "./index.css";
 import Banner from "../../components/LargeCard";
+import FAQ from "../../components/FAQ";
 
 const Home = () => {
   return (
@@ -92,6 +93,7 @@ const Home = () => {
         <img src={TelecoImage} alt="teleco assistindo tv" />
       </div>
       <Banner type="combo"></Banner>
+      <FAQ />
     </div>
   );
 };

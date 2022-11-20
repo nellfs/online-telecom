@@ -1,5 +1,5 @@
-import ComboBanner from "./ComboCard";
-import NewsletterBanner from "./NewsletterCard";
+import ComboBanner from "./ComboCard/ComboCard";
+import NewsletterBanner from "./NewsletterCard/NewsletterCard";
 
 interface IBanner {
   type: "combo" | "newsletter";

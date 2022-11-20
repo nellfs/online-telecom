@@ -1,0 +1,22 @@
+.faq__title {
+  background-color: yellow;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.faq__title small {
+  color: var(--color-primary);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.faq__title h3 {
+  margin-top: 4px;
+  font-size: 36px;
+  margin-bottom: 21.6px;
+  font-weight: 600;
+  color: var(--color-dark);
+}

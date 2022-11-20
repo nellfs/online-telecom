@@ -48,6 +48,7 @@
 }
 
 .combo__button:hover {
+  color: var(--color-primary);
   background-color: white;
 }
 
@@ -74,6 +75,7 @@
     height: 300px;
     padding-top: 20px;
     justify-content: start;
+    background-position: bottom;
     background-image: url(../../../assets/images/combo-image-mobile.png);
   }
 
@@ -84,6 +86,11 @@
 
   .combo__text p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .combo .container {
   }
 }
 
