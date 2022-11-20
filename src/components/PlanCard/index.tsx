@@ -1,11 +1,10 @@
-import "./index.css";
-import WifiIcon from "../../assets/icons/wifi_icon.png";
-import PlanButton, { BonusOptions } from "../PlanButton";
-import Button from "../Buttons";
+import './index.css';
+import WifiIcon from '../../assets/icons/wifi_icon.png';
+import PlanButton, { BonusOptions } from '../PlanButton';
 
 interface IPlanCard {
   speed: number;
-  description: "fibra" | "radio";
+  description: 'fibra' | 'radio';
   bonus?: BonusOptions[];
   price: string;
   bonus_info?: boolean;
@@ -17,9 +16,9 @@ const PlanCard = (props: IPlanCard) => {
       <div className="plan__card-top">
         <h1>{props.speed} Mega</h1>
         <h2>
-          {props.description === "fibra"
-            ? "Internet fibra + aplicativos"
-            : "de internet rádio"}
+          {props.description === 'fibra'
+            ? 'Internet fibra + aplicativos'
+            : 'de internet rádio'}
         </h2>
       </div>
       <div className="plan__card-center">

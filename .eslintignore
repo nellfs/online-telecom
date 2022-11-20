@@ -1,6 +1,6 @@
 node_modules/
 dist/
+dist
 .prettierrc.js
 .eslintrc.js
 env.d.ts
-dist

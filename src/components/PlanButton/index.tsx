@@ -1,31 +1,31 @@
-import "./index.css";
+import './index.css';
 
-import BonusBebanca from "../../assets/otts/bonus_bebanca.png";
-import BonusDeezer from "../../assets/otts/bonus_deezer.png";
-import BonusHBOMax from "../../assets/otts/bonus_hbomax.png";
-import BonusNordesteFC from "../../assets/otts/bonus_nordestefc.png";
-import BonusTocaLivros from "../../assets/otts/bonus_tocalivros.png";
-import BonusWatchbr from "../../assets/otts/bonus_watchbr.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import BonusBebanca from '../../assets/otts/bonus_bebanca.png';
+import BonusDeezer from '../../assets/otts/bonus_deezer.png';
+import BonusHBOMax from '../../assets/otts/bonus_hbomax.png';
+import BonusNordesteFC from '../../assets/otts/bonus_nordestefc.png';
+import BonusTocaLivros from '../../assets/otts/bonus_tocalivros.png';
+import BonusWatchbr from '../../assets/otts/bonus_watchbr.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-const BonusPlans = [
-  BonusBebanca,
-  BonusDeezer,
-  BonusHBOMax,
-  BonusNordesteFC,
-  BonusTocaLivros,
-  BonusWatchbr,
-];
+// const BonusPlans = [
+//   BonusBebanca,
+//   BonusDeezer,
+//   BonusHBOMax,
+//   BonusNordesteFC,
+//   BonusTocaLivros,
+//   BonusWatchbr,
+// ];
 
 export type BonusOptions =
-  | "none"
-  | "bebanca"
-  | "deezer"
-  | "hbomax"
-  | "nordestefc"
-  | "tocalivros"
-  | "watchbr";
+  | 'none'
+  | 'bebanca'
+  | 'deezer'
+  | 'hbomax'
+  | 'nordestefc'
+  | 'tocalivros'
+  | 'watchbr';
 
 export interface IPlanButton {
   bonusType: BonusOptions;
@@ -33,20 +33,20 @@ export interface IPlanButton {
 
 const BonusImage = (bonus: BonusOptions) => {
   switch (bonus) {
-    case "bebanca":
+    case 'bebanca':
       return BonusBebanca;
-    case "deezer":
+    case 'deezer':
       return BonusDeezer;
-    case "hbomax":
+    case 'hbomax':
       return BonusHBOMax;
-    case "nordestefc":
+    case 'nordestefc':
       return BonusNordesteFC;
-    case "tocalivros":
+    case 'tocalivros':
       return BonusTocaLivros;
-    case "watchbr":
+    case 'watchbr':
       return BonusWatchbr;
     default:
-      return "";
+      return '';
   }
 };
 
@@ -57,7 +57,7 @@ const PlanButton = (props: IPlanButton) => {
       <FontAwesomeIcon
         icon={faCaretRight}
         className="caret-right"
-        size={"xl"}
+        size={'xl'}
       />
     </div>
   );
