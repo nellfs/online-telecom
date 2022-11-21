@@ -1,16 +1,12 @@
-.faq {
-  max-width: 1240px;
-}
-
-.faq small {
+.contact small {
   color: var(--color-primary);
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
-  margin-bottom: 100px;
+  margin-bottom: 4px;
 }
 
-.faq h3 {
+.contact h3 {
   margin-top: 4px;
   font-size: 36px;
   margin-bottom: 21.6px;

@@ -7,6 +7,7 @@ import TelecoImage from '../../assets/images/bg_teleco_tv.png';
 import './index.css';
 import Banner from '../../components/LargeCard';
 import FAQ from '../../components/FAQ';
+import Contact from '../../components/Contact';
 
 const Home = () => {
   return (
@@ -93,7 +94,10 @@ const Home = () => {
         <img src={TelecoImage} alt="teleco assistindo tv" />
       </div>
       <Banner type="combo"></Banner>
-      <FAQ />
+      <section className="about-mode">
+        <FAQ />
+        <Contact />
+      </section>
     </div>
   );
 };
