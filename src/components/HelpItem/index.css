@@ -1,0 +1,35 @@
+.help__item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid var(--color-dark);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+
+.help__item:hover {
+  transform: scale(1.1);
+  border-color: var(--color-primary);
+}
+
+.help__item-container img {
+  margin-bottom: 35px;
+}
+
+.help__item-container {
+  padding: 20px;
+  margin: auto 0;
+}
+
+.help__item-container p {
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark);
+}

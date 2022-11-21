@@ -148,6 +148,12 @@
   align-items: flex-start;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-mode {
+    grid-template-columns: auto;
+  }
+}
+
 @media (max-width: 1290px) {
   .plans__container {
     grid-template-columns: repeat(3, 30%);

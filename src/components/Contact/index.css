@@ -1,3 +1,7 @@
+.contact {
+  margin: 0 0 60px;
+}
+
 .contact small {
   color: var(--color-primary);
   font-family: Roboto;
@@ -9,7 +13,24 @@
 .contact h3 {
   margin-top: 4px;
   font-size: 36px;
-  margin-bottom: 21.6px;
+  margin-bottom: 31.6px;
   font-weight: 600;
   color: var(--color-dark);
+}
+
+.contact .help__grid {
+  height: 180px;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  grid-column-gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .help__grid {
+    height: 138px;
+    width: 100%;
+    grid-column-gap: 32px;
+  }
 }
