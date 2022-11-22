@@ -2,6 +2,7 @@ import './index.css';
 import HelpItem from '../HelpItem';
 import CallIcon from '../../assets/icons/call_icon.svg';
 import ChatIcon from '../../assets/icons/chat_icon.svg';
+import AddressCard from '../AddressCard';
 
 const Contact = () => {
   return (
@@ -12,6 +13,7 @@ const Contact = () => {
         <HelpItem icon={CallIcon} text="Ligue Agora"></HelpItem>
         <HelpItem icon={ChatIcon} text="Chat Online"></HelpItem>
       </div>
+      <AddressCard place="Rua Sem Nome, 360 – Centro "></AddressCard>
     </div>
   );
 };

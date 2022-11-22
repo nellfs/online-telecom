@@ -33,3 +33,10 @@
   font-size: 20px;
   color: var(--color-dark);
 }
+
+@media screen and (max-width: 1200px) {
+  .help__item:hover {
+    transform: scale(1.05);
+    border-color: var(--color-primary);
+  }
+}

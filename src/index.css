@@ -1,6 +1,6 @@
 :root {
   background: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   --color-dark: #373435;
   --color-light: #fff;
@@ -44,6 +44,12 @@
   --color-secondary-darker: #2f2c2d;
 
   --color-scrollbar: #888;
+}
+
+small {
+  display: inline-block;
+  line-height: 1.4;
+  opacity: 0.8;
 }
 
 body {
