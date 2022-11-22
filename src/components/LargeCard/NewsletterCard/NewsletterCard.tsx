@@ -1,5 +1,11 @@
+import './NewsletterCard.css';
+
 const NewsletterBanner = () => {
-  return <div>Newsletter banner</div>;
+  return (
+    <div className="newsletter">
+      <div className="container">Newsletter banner</div>
+    </div>
+  );
 };
 
 export default NewsletterBanner;

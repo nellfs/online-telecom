@@ -93,11 +93,12 @@ const Home = () => {
         </div>
         <img src={TelecoImage} alt="teleco assistindo tv" />
       </div>
-      <Banner type="combo"></Banner>
+      <Banner type="combo" />
       <section className="about-mode">
         <FAQ />
         <Contact />
       </section>
+      <Banner type="newsletter" />
     </div>
   );
 };
