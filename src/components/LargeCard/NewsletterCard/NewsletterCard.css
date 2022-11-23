@@ -1,8 +1,28 @@
 .newsletter {
-  width: 1240px;
+  max-width: 1240px;
   padding: 0 20px;
-  margin: auto;
+  margin: 0px auto 40px;
 }
 
 .newsletter .container {
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  height: 167px;
+  margin: auto;
+}
+
+.newsletter .container small {
+  color: white;
+  font-size: 14px;
+  font-family: Montserrat;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.newsletter .container img {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  left: -54px;
 }
