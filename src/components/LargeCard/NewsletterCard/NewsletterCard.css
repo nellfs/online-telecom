@@ -2,22 +2,36 @@
   max-width: 1240px;
   padding: 0 20px;
   margin: 0px auto 40px;
+  height: 167px;
 }
 
 .newsletter .container {
   position: relative;
   border-radius: 6px;
   background-color: var(--color-primary);
-  height: 167px;
+  height: 100%;
   margin: auto;
+}
+
+.newsletter .container .text {
+  padding: 30px 20px 20px 110px;
 }
 
 .newsletter .container small {
   color: white;
   font-size: 14px;
   font-family: Montserrat;
-  margin-bottom: 10px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.newsletter .container p {
+  color: white;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .newsletter .container img {
