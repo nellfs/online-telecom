@@ -8,6 +8,7 @@ import './index.css';
 import Banner from '../../components/LargeCard';
 import FAQ from '../../components/FAQ';
 import Contact from '../../components/Contact';
+import EmailInput from '../../components/EmailInput';
 
 const Home = () => {
   return (
@@ -99,6 +100,7 @@ const Home = () => {
         <Contact />
       </section>
       <Banner type="newsletter" />
+      <EmailInput></EmailInput>
     </div>
   );
 };

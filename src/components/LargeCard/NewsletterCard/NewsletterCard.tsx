@@ -5,8 +5,8 @@ const NewsletterBanner = () => {
   return (
     <div className="newsletter">
       <div className="container">
-        <img src={NewsletterImage} />
         <div className="text">
+          <img src={NewsletterImage} />
           <small>CLUBE ONLINE</small>
           <p>
             Assine nossa newsletter e{' '}
