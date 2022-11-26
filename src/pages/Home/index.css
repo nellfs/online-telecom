@@ -34,14 +34,20 @@
   border-radius: 10px;
 }
 
-.plans {
+.page-home {
   margin: auto;
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans {
   padding: 50px 0;
 }
 
 .plans .container {
-  max-width: 1240px;
-  margin: 0 auto;
   display: flex;
   padding: 0 3rem;
   margin-bottom: 60px;
@@ -92,7 +98,6 @@
 }
 
 .plans__container {
-  margin: auto;
   max-width: 1240px;
   width: 100%;
   display: grid;
@@ -103,8 +108,6 @@
 }
 
 .new_services_container {
-  max-width: 1240px;
-  margin: auto;
   display: flex;
   flex-direction: row;
   margin-bottom: 60px;
@@ -140,8 +143,6 @@
 
 .about-mode {
   padding: 0 20px;
-  max-width: 1240px;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 60px;

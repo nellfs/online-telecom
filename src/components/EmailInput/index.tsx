@@ -1,7 +1,9 @@
+import './index.css';
+
 const EmailInput = () => {
   return (
     <form>
-      <input type="email" placeholder="E-mail"></input>
+      <input className="emailinput" type="email" placeholder="E-mail"></input>
     </form>
   );
 };

@@ -1,8 +1,8 @@
 .combo {
-  max-width: 1240px;
   display: flex;
   padding: 0 20px;
-  margin: 120px auto 50px;
+  width: 100%;
+  margin: 120px 0 50px;
 }
 
 .combo .container {
@@ -24,7 +24,7 @@
 .combo__text h3 {
   margin-top: 0px;
   font-size: 36px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   margin-bottom: 0px;
 }
