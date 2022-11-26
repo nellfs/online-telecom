@@ -1,5 +1,6 @@
 import './NewsletterCard.css';
 import NewsletterImage from '../../../assets/images/newsletter-image.png';
+import EmailInput from '../../EmailInput';
 
 const NewsletterBanner = () => {
   return (
@@ -13,6 +14,7 @@ const NewsletterBanner = () => {
             <b>fique por dentro de todas as nossas ofertas!</b>
           </p>
         </div>
+        <EmailInput></EmailInput>
       </div>
     </div>
   );
