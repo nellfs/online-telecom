@@ -6,7 +6,7 @@ const NewsletterBanner = () => {
   return (
     <div className="newsletter">
       <div className="container">
-        <div className="text">
+        <div className="newsletter_text">
           <img src={NewsletterImage} />
           <small>CLUBE ONLINE</small>
           <p>
@@ -14,7 +14,9 @@ const NewsletterBanner = () => {
             <b>fique por dentro de todas as nossas ofertas!</b>
           </p>
         </div>
-        <EmailInput></EmailInput>
+        <div className="newsletter_emailinput">
+          <EmailInput></EmailInput>
+        </div>
       </div>
     </div>
   );

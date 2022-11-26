@@ -6,14 +6,21 @@
 
 .newsletter .container {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  padding-left: 7rem;
+  padding-bottom: 0;
   border-radius: 6px;
   background-color: var(--color-primary);
   height: 100%;
-  margin: auto;
 }
 
-.newsletter .container .text {
-  padding: 30px 20px 20px 110px;
+.newsletter .container .newsletter_text {
+  margin-right: 10px;
+}
+
+.newsletter .container .newsletter_emailinput {
 }
 
 .newsletter .container small {

@@ -1,13 +1,24 @@
-.emailinput {
-  background-color: blue;
-  width: 100%;
+.inputemail {
+  display: flex;
+  flex-direction: row;
+}
+.emailinput .input {
+  display: flex;
+  width: 466px;
   height: 60px;
   border-radius: 6px;
   border: none;
-  margin-bottom: 10px;
   padding-left: 1rem;
   font-family: Montserrat;
   font-size: 16px;
   color: var(--color-dark);
   letter-spacing: 0.6px;
+}
+
+.emailinput .input::placeholder {
+  color: var(--color-grey);
+}
+
+.emailinput .input:focus {
+  outline: none;
 }
