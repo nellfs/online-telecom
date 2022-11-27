@@ -21,6 +21,7 @@
 }
 
 .newsletter .container .newsletter_emailinput {
+  height: 100%;
 }
 
 .newsletter .container small {

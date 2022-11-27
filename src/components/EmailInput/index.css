@@ -1,24 +1,58 @@
-.inputemail {
+.emailinput {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100%;
+  background-color: blue;
 }
-.emailinput .input {
+
+.emailinput form {
+  margin: auto;
+  position: relative;
   display: flex;
+  align-items: center;
+  background-color: white;
   width: 466px;
   height: 60px;
-  border-radius: 6px;
   border: none;
-  padding-left: 1rem;
+  font-family: Montserrat;
+  font-size: 16px;
+  border-radius: 6px;
+  color: var(--color-dark);
+}
+
+.emailinput form .input {
+  padding-left: 10px;
+  width: 100%;
+  margin-right: 140px;
+  background-color: transparent;
+  border: none;
   font-family: Montserrat;
   font-size: 16px;
   color: var(--color-dark);
   letter-spacing: 0.6px;
 }
 
-.emailinput .input::placeholder {
+.emailinput form .input::placeholder {
   color: var(--color-grey);
 }
 
-.emailinput .input:focus {
+.emailinput form .input:focus {
   outline: none;
+}
+
+.emailinput form button {
+  font-family: Montserrat;
+  color: white;
+  position: absolute;
+  right: 5px;
+  background-color: var(--color-dark);
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.emailinput .check {
 }
