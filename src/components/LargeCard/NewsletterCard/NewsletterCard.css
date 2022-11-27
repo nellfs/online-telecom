@@ -1,7 +1,5 @@
 .newsletter {
   width: 100%;
-  margin: 0 0 40px;
-  height: 167px;
 }
 
 .newsletter .container {
@@ -22,6 +20,8 @@
 
 .newsletter .container .newsletter_emailinput {
   height: 100%;
+  display: flex;
+  padding: 20px;
 }
 
 .newsletter .container small {
@@ -46,4 +46,30 @@
   position: absolute;
   bottom: 0px;
   left: -54px;
+}
+
+@media screen and (max-width: 1200px) {
+  .newsletter .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .newsletter .container img {
+    display: none;
+  }
+
+  .newsletter .container .newsletter_text {
+    margin: 0;
+  }
+  .newsletter .container .newsletter_emailinput {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+  }
 }

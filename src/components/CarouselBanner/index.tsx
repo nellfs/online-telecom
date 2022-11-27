@@ -1,9 +1,9 @@
-import "./index.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import './index.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
-import { Carousel } from "react-responsive-carousel";
-import { desktop_banner, mobile_banner } from "../../utils/banners";
-import useWindowWidth from "../../hooks/useWindowWidth";
+import { Carousel } from 'react-responsive-carousel';
+import { desktop_banner, mobile_banner } from '../../utils/banners';
+import { useWindowWidth } from '../../hooks';
 
 const CarouselBanner = () => {
   const banner =
@@ -23,25 +23,25 @@ const CarouselBanner = () => {
       swipeScrollTolerance={50}
       renderIndicator={(clickHandler, isSelected) => {
         const dot = {
-          width: "12px",
-          height: "12px",
-          borderRadius: "100%",
-          margin: "0px 5px",
-          background: "transparent",
-          border: "1px white solid",
-          cursor: "pointer",
-          transition: "background 0.2s ease",
+          width: '12px',
+          height: '12px',
+          borderRadius: '100%',
+          margin: '0px 5px',
+          background: 'transparent',
+          border: '1px white solid',
+          cursor: 'pointer',
+          transition: 'background 0.2s ease'
         };
 
         const selectedDot = {
           ...dot,
-          background: "white",
+          background: 'white'
         };
 
         const style = isSelected ? selectedDot : dot;
 
         return (
-          <div style={{ display: "inline-flex" }}>
+          <div style={{ display: 'inline-flex' }}>
             <span onClick={clickHandler} style={style}></span>
           </div>
         );

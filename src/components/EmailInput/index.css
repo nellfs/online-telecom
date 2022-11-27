@@ -1,17 +1,19 @@
 .emailinput {
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100%;
-  background-color: blue;
+  margin: auto;
 }
 
 .emailinput form {
-  margin: auto;
+  margin-top: auto;
   position: relative;
   display: flex;
   align-items: center;
   background-color: white;
-  width: 466px;
+  width: 100%;
   height: 60px;
   border: none;
   font-family: Montserrat;
@@ -54,5 +56,30 @@
   padding: 10px;
 }
 
-.emailinput .check {
+.emailinput .confirmation {
+  user-select: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.emailinput .confirmation .check {
+  border: 1px white solid;
+  color: var(--color-primary);
+  border-radius: 2px;
+  margin-right: 10px;
+  transition: background 0.1s;
+}
+
+.emailinput .confirmation .check-active {
+  border: 1px white solid;
+  color: var(--color-primary);
+  border-radius: 2px;
+  margin-right: 10px;
+  transition: background 0.2s;
+  background-color: white;
 }

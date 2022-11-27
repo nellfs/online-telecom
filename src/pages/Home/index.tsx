@@ -9,6 +9,7 @@ import Banner from '../../components/LargeCard';
 import FAQ from '../../components/FAQ';
 import Contact from '../../components/Contact';
 import EmailInput from '../../components/EmailInput';
+import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
@@ -114,6 +115,7 @@ const Home = () => {
         </section>
         <Banner type="newsletter" />
       </div>
+      <Footer></Footer>
     </>
   );
 };

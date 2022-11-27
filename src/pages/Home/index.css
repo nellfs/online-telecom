@@ -152,6 +152,7 @@
 
 @media screen and (max-width: 1200px) {
   .about-mode {
+    margin-bottom: 0px;
     grid-template-columns: auto;
   }
 }
@@ -160,30 +161,17 @@
   .plans__container {
     grid-template-columns: repeat(3, 30%);
   }
-
-  .new_services_container {
-    padding: 0 20px;
-  }
 }
 
 @media (max-width: 950px) {
   .plans__container {
-    grid-template-columns: repeat(2, 46%);
+    grid-template-columns: repeat(2, 47%);
   }
 }
 
 @media (max-width: 900px) {
-  .plans .container {
-    padding: 0 0rem;
-  }
-
   .plans__title {
     margin-bottom: 0px;
-  }
-
-  .plans__header {
-    width: auto;
-    margin: auto;
   }
 
   .plans__subtitle {
@@ -204,16 +192,20 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   .plans__container {
-    grid-template-columns: repeat(1, 90%);
+    grid-template-columns: repeat(1, 100%);
   }
+}
 
-  .plans__header {
-    width: 95%;
-  }
-
+@media (max-width: 600px) {
   .plans__title {
     font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page-home {
+    padding: 12px;
   }
 }
