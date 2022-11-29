@@ -94,7 +94,7 @@ const Footer = () => {
           <div className="copyright">
             Todos os direitos reservados © Online Telecom
           </div>
-          <a href="https://github.com/nellfs">
+          <a href="https://github.com/nellfs/online-telecom">
             <FontAwesomeIcon
               icon={faGithub}
               size={'xl'}
