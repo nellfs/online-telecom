@@ -6,6 +6,10 @@
 }
 
 .footer .container {
+  margin: auto;
+  max-width: 1240px;
+  box-sizing: border-box;
+  padding: 40px 0px;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -14,17 +18,16 @@
 }
 
 .footer-container__columns {
-  padding: 40px 30px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: flex-start;
-  margin-bottom: 40px;
   grid-column-gap: 20px;
 }
 
 /* first column */
 
 .footer-social_column {
+  margin-bottom: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -73,6 +76,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  cursor: pointer;
   background-color: var(--color-primary);
   width: 35px;
   height: 35px;
@@ -85,10 +89,84 @@
   transform: rotate(8deg);
 }
 
+/* second column */
+
+.footer-options__container ul {
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-options__container h2 {
+  font-size: 16px;
+  font-synthesis: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-options__container li {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-flex;
+}
+
+/* third column */
+
+.footer-contact_column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact_item {
+  display: inline-flex;
+  color: white;
+  width: 100%;
+  border: 1px white solid;
+  border-radius: 6px;
+}
+
+.footer-contact_item a {
+  padding: 12px 0px;
+  margin: auto;
+}
+
+.footer-container__copyrights {
+  width: 100%;
+  border-top: 1px #666 solid;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-container__copyrights a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* screen size */
+
 @media screen and (max-width: 1200px) {
-  .footer-container__columns {
+  .footer {
+    height: fit-content;
+  }
+
+  .footer .container {
     padding: 40px 20px;
-    grid-template-columns: auto;
+  }
+
+  .footer-container__columns {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 
   .footer-container__columns .download {
@@ -109,5 +187,10 @@
     width: 40px;
     height: 40px;
     font-size: 19px;
+  }
+
+  .footer-options__container ul {
+    margin: 20px 0;
+    padding-left: 0;
   }
 }
