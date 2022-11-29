@@ -29,7 +29,11 @@ const Footer = () => {
   const getSocialIcons = () => {
     return SocialIcons.map((icon, n) => (
       <div className="social-icon" key={n}>
-        <FontAwesomeIcon icon={icon} size={'lg'}></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={icon}
+          size={'lg'}
+          className="icon"
+        ></FontAwesomeIcon>
       </div>
     ));
   };
@@ -49,7 +53,10 @@ const Footer = () => {
             </div>
             <div className="social-media">{getSocialIcons()}</div>
           </div>
-          <div>test</div>
+          <ul className="footer-institutional_column">
+            <li>Institucional</li>
+            <li>placeholder</li>
+          </ul>
         </div>
       </div>
     </footer>
