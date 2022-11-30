@@ -6,11 +6,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/online-telecom" element={<Location></Location>}></Route>
-        <Route
-          path="/online-telecom/:city/para-voce"
-          element={<Home></Home>}
-        ></Route>
+        <Route path="/" element={<Location></Location>}></Route>
+        <Route path="/:city/para-voce" element={<Home></Home>}></Route>
       </Routes>
     </BrowserRouter>
   );
