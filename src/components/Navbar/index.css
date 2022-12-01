@@ -5,7 +5,7 @@
   top: 0;
   z-index: 200;
   width: 100%;
-  color: var(--color-dark);
+  background-color: var(--background);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 }
 
@@ -17,7 +17,6 @@
   width: 100%;
   position: relative;
   display: block;
-  background-color: var(--color-light);
   box-shadow: inset 0px 0px 5px 0px rgb(0 0 0 / 5%);
 }
 
@@ -58,7 +57,6 @@
   position: relative;
   width: 100%;
   z-index: 200;
-  background-color: white;
   height: 119.594px;
 }
 
