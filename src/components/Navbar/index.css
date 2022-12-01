@@ -5,6 +5,7 @@
   top: 0;
   z-index: 200;
   width: 100%;
+  color: var(--text);
   background-color: var(--background);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 }

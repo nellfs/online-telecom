@@ -3,15 +3,19 @@ import { Theme, ThemeType } from './themetype';
 
 export const THEMES: Record<ThemeType, Theme> = {
   light: {
-    '--primary': Color.VIOLET,
-    '--secondary': Color.DARK_VIOLET,
+    '--primary': Color.PRIMARY,
+    '--secondary': Color.WHITE,
     '--background': Color.WHITE,
-    '--white': Color.WHITE
+    '--white': Color.WHITE,
+    '--dark': Color.BROWN,
+    '--text': Color.BROWN
   },
   dark: {
-    '--primary': Color.VIOLET,
+    '--primary': Color.PRIMARY,
     '--secondary': Color.WHITE,
     '--background': Color.BROWN,
-    '--white': Color.WHITE
+    '--white': Color.WHITE,
+    '--dark': Color.BROWN,
+    '--text': Color.WHITE
   }
 };
