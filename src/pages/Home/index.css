@@ -115,17 +115,16 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  color: var(--text);
 }
 
 .new_services_container .text h2 {
-  color: var(--color-dark);
   font-family: 'GothamBold';
   font-size: 2rem;
   margin-bottom: 0px;
 }
 
 .new_services_container .text p {
-  color: var(--color-text);
   font-family: 'GothamRegular';
   font-size: 1rem;
   line-height: 1.45;

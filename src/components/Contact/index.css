@@ -15,7 +15,7 @@
   font-size: 36px;
   margin-bottom: 31.6px;
   font-weight: 600;
-  color: var(--color-dark);
+  color: var(--text);
 }
 
 .contact .help__grid {

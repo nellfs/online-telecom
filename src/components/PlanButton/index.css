@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 2px auto;
-  background-color: var(--color-light);
+  background-color: var(--background);
   border-bottom: solid #0004 2px;
   border-radius: 0 0 10px 0;
   padding: 8px 12px;
@@ -17,6 +17,11 @@
   width: 8em;
   padding: 0px 4px;
   max-width: 100%;
+  -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
+    drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+
+  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white)
+    drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white);
 }
 
 .plan__button .caret-right {

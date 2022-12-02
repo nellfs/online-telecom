@@ -1,7 +1,8 @@
 .address__card {
   padding: 30px;
   border-radius: 6px;
-  background-color: #f8f8f8;
+  background-color: var(--soft-dark);
+  color: var(--text);
 }
 
 .address__card small {
@@ -17,17 +18,11 @@
   font-size: 36px;
   margin-bottom: 31.6px;
   font-weight: 600;
-  color: var(--color-dark);
 }
 
 .address__card p {
-  color: var(--color-dark);
   font-size: 16px;
   font-weight: 500;
   font-family: Montserrat;
   margin-bottom: 20px;
-}
-
-.address__info {
-  color: var(--color-dark);
 }
