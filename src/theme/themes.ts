@@ -8,14 +8,18 @@ export const THEMES: Record<ThemeType, Theme> = {
     '--background': Color.WHITE,
     '--white': Color.WHITE,
     '--dark': Color.BROWN,
-    '--text': Color.BROWN
+    '--text': Color.BROWN,
+    '--dark-text': Color.GRAY,
+    '--soft-dark': Color.SOFT_LIGHT
   },
   dark: {
     '--primary': Color.PRIMARY,
-    '--secondary': Color.WHITE,
+    '--secondary': Color.BROWN,
     '--background': Color.BROWN,
     '--white': Color.WHITE,
     '--dark': Color.BROWN,
-    '--text': Color.WHITE
+    '--text': Color.WHITE,
+    '--dark-text': Color.ICE,
+    '--soft-dark': Color.SOFT_DARK
   }
 };

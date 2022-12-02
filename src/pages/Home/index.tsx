@@ -9,10 +9,8 @@ import Banner from '../../components/LargeCard';
 import FAQ from '../../components/FAQ';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
-import { useTheme } from '../../contexts/Theme/ThemeContext';
 
 const Home = () => {
-  const { theme } = useTheme();
   return (
     <div className="main-home">
       <NavBar />

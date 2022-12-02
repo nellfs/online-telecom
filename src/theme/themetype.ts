@@ -8,5 +8,7 @@ export interface Theme {
   '--background': Color;
   '--white': Color;
   '--text': Color;
+  '--dark-text': Color;
   '--dark': Color;
+  '--soft-dark': Color;
 }

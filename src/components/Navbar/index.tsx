@@ -1,9 +1,12 @@
 import './index.css';
 import DarkThemeIcon from '../../assets/icons/dark/theme_icon.png';
 import LightThemeIcon from '../../assets/icons/light/theme_icon.png';
-import ChevronDownIcon from '../../assets/utils/chevrondown_icon.png';
-import OnlineIcon from '../../assets/icons/icon_onlinetelecom.png';
-import UserIcon from '../../assets/utils/user_icon.png';
+import LightChevronDownIcon from '../../assets/icons/light/chevrondown_icon.png';
+import DarkChevronDownIcon from '../../assets/icons/dark/chevrondown_icon.png';
+import LightOnlineIcon from '../../assets/icons/light/onlinetelecom_icon.webp';
+import DarkOnlineIcon from '../../assets/icons/dark/onlinetelecom_icon.webp';
+import LightUserIcon from '../../assets/icons/light/user_icon.png';
+import DarkUserIcon from '../../assets/icons/dark/user_icon.png';
 import Button from '../Buttons';
 import location_finder from '../../utils/location_fixer.json';
 import { Link, useParams } from 'react-router-dom';
@@ -44,7 +47,13 @@ const NavBar = () => {
             </div>
             <div className="navbar__top-right">
               <div>{realCity}</div>
-              <img src={ChevronDownIcon}></img>
+              <img
+                src={
+                  themeType === 'light'
+                    ? DarkChevronDownIcon
+                    : LightChevronDownIcon
+                }
+              ></img>
             </div>
           </div>
         </div>
@@ -53,7 +62,12 @@ const NavBar = () => {
             <div className="navbar__bottom-left">
               <div className="bottom__left">
                 <Link to={'/'}>
-                  <img src={OnlineIcon} alt={'Online Telecom'}></img>
+                  <img
+                    src={
+                      themeType === 'light' ? DarkOnlineIcon : LightOnlineIcon
+                    }
+                    alt={'Online Telecom'}
+                  ></img>
                 </Link>
                 <div className="bottom__left-options">
                   <a>PARA VOCÊ</a>
@@ -69,7 +83,10 @@ const NavBar = () => {
                 <Button theme="red">Assine já</Button>
                 <Button theme="outline">2ª Via</Button>
                 <Button theme="default">
-                  <img src={UserIcon}></img>Minha Online
+                  <img
+                    src={themeType === 'light' ? LightUserIcon : DarkUserIcon}
+                  ></img>
+                  Minha Online
                 </Button>
               </div>
               <div

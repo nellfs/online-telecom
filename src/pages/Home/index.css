@@ -58,7 +58,7 @@
 }
 
 .plans__title {
-  color: var(--color-dark);
+  color: var(--text);
   margin-top: 0;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -86,7 +86,7 @@
   font-family: Montserrat;
   font-weight: 600;
   font-size: 18px;
-  color: var(--color-dark);
+  color: var(--text);
   transition: background 0.4s;
 }
 

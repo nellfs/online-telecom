@@ -40,6 +40,10 @@
   justify-content: flex-start;
 }
 
+.navbar__top-left img {
+  cursor: pointer;
+}
+
 .navbar__top-right {
   text-transform: capitalize;
   font-size: 14px;

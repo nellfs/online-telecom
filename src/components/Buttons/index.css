@@ -13,14 +13,13 @@
   font-size: 14px;
   font-weight: 600;
   background-color: var(--text);
-  color: var(--color-light);
+  color: var(--secondary);
 }
 
 .default__button img {
   margin: auto;
   margin-right: 5px;
   width: 13px;
-  filter: brightness(100);
 }
 
 .outline__button {

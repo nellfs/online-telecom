@@ -1,32 +1,32 @@
 @font-face {
-  font-family: "ArlonBold";
-  src: local("ArlonBold"),
-    url("../../fonts/Arlon/Arlon-Bold.ttf") format("truetype");
+  font-family: 'ArlonBold';
+  src: local('ArlonBold'),
+    url('../../fonts/Arlon/Arlon-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "ArlonRegular";
-  src: local("ArlonRegular"),
-    url("../../fonts/Arlon/Arlon-Regular.ttf") format("truetype");
+  font-family: 'ArlonRegular';
+  src: local('ArlonRegular'),
+    url('../../fonts/Arlon/Arlon-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "GothamBold";
-  src: local("GothamBold"),
-    url("../../fonts/Gotham/Gotham-Bold.otf") format("truetype");
+  font-family: 'GothamBold';
+  src: local('GothamBold'),
+    url('../../fonts/Gotham/Gotham-Bold.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "GothamRegular";
-  src: local("GothamRegular"),
-    url("../../fonts/Gotham/Gotham-Regular.ttf") format("truetype");
+  font-family: 'GothamRegular';
+  src: local('GothamRegular'),
+    url('../../fonts/Gotham/Gotham-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "GothamMedium";
-  src: local("GothamMedium"),
-    url("../../fonts/Gotham/Gotham-Medium.otf") format("truetype");
+  font-family: 'GothamMedium';
+  src: local('GothamMedium'),
+    url('../../fonts/Gotham/Gotham-Medium.otf') format('truetype');
 }
 .plan__card {
   width: 100%;
@@ -47,14 +47,14 @@
 
 .plan__card-top h1 {
   font-size: 3em;
-  font-family: "ArlonBold";
+  font-family: 'ArlonBold';
   font-weight: 900;
   margin: 0 auto;
   color: var(--color-primary);
 }
 
 .plan__card-top h2 {
-  font-family: "ArlonRegular";
+  font-family: 'ArlonRegular';
   font-size: 1.2em;
   color: var(--color-grey);
   margin: auto;
@@ -67,7 +67,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  background-color: var(--color-grey-lighter);
+  background-color: var(--soft-dark);
 }
 
 .plan__card-center span {
@@ -88,7 +88,7 @@
   color: var(--color-dark);
   font-size: 16px;
   padding: 7px 0px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .plan__card .wifi-icon img {
@@ -102,7 +102,7 @@
   align-items: flex-end;
   justify-content: center;
   padding: 1rem 2rem;
-  font-family: "GothamBold";
+  font-family: 'GothamBold';
   color: var(--color-dark);
 }
 
@@ -113,7 +113,7 @@
 }
 
 .plan__card-bottom span {
-  font-family: "GothamMedium";
+  font-family: 'GothamMedium';
   font-size: 1.2em;
 }
 
@@ -129,7 +129,7 @@
   display: block;
   background-color: var(--color-primary);
   color: #fff;
-  font-family: "GothamBold";
+  font-family: 'GothamBold';
   font-size: 1em;
   text-align: center;
   text-transform: uppercase;
