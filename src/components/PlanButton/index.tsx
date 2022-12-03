@@ -9,15 +9,6 @@ import BonusWatchbr from '../../assets/otts/bonus_watchbr.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-// const BonusPlans = [
-//   BonusBebanca,
-//   BonusDeezer,
-//   BonusHBOMax,
-//   BonusNordesteFC,
-//   BonusTocaLivros,
-//   BonusWatchbr,
-// ];
-
 export type BonusOptions =
   | 'none'
   | 'bebanca'
@@ -53,7 +44,10 @@ const BonusImage = (bonus: BonusOptions) => {
 const PlanButton = (props: IPlanButton) => {
   return (
     <div className="plan__button">
-      <img src={BonusImage(props.bonusType)}></img>
+      <img
+        src={BonusImage(props.bonusType)}
+        alt={`${props.bonusType} logo`}
+      ></img>
       <FontAwesomeIcon
         icon={faCaretRight}
         className="caret-right"

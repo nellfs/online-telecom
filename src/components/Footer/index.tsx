@@ -1,8 +1,8 @@
 import './index.css';
 
-import AndroidDownloadImage from '../../assets/getapp/google-play.png';
-import IOSDownloadImage from '../../assets/getapp/apple-store.png';
-import OnlineLogo from '../../assets/icons/icon_onlinetelecom_white.png';
+import AndroidDownloadImage from '../../assets/getapp/google-play.webp';
+import IOSDownloadImage from '../../assets/getapp/apple-store.webp';
+import OnlineLogo from '../../assets/icons/light/onlinetelecom_icon.webp';
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -43,12 +43,12 @@ const Footer = () => {
         <div className="footer-container__columns">
           <div className="footer-social_column">
             <div className="logo">
-              <img src={OnlineLogo}></img>
+              <img src={OnlineLogo} alt="Online Logo"></img>
               <p>Baixe o app Minha Online</p>
             </div>
             <div className="download">
-              <img src={IOSDownloadImage}></img>
-              <img src={AndroidDownloadImage}></img>
+              <img src={IOSDownloadImage} alt="IOS Download"></img>
+              <img src={AndroidDownloadImage} alt="Android Download"></img>
             </div>
             <div className="social-media">{getSocialIcons()}</div>
           </div>

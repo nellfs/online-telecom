@@ -1,7 +1,7 @@
-import "./index.css";
+import './index.css';
 
-import OnlineIcon from "../../assets/icons/icon_onlinetelecom.webp";
-import Map from "../../components/Location/";
+import OnlineIcon from '../../assets/icons/dark/onlinetelecom_icon.webp';
+import Map from '../../components/Location/';
 
 const Location = () => {
   return (

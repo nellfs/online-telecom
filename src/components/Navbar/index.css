@@ -5,8 +5,8 @@
   top: 0;
   z-index: 200;
   width: 100%;
-  color: var(--text);
   background-color: var(--background);
+  color: var(--text);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 }
 
@@ -71,6 +71,17 @@
   width: 100%;
   margin: auto;
   max-width: 1240px;
+}
+
+.container__bottom a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.4s;
+}
+
+.container__bottom a:hover {
+  color: var(--color-primary);
+  transition: color 0.4s;
 }
 
 .container__bottom img {

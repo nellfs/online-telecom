@@ -52,7 +52,7 @@
   font-size: 18px;
 }
 
-.location__white_main b {
+.location__white__main b {
   color: var(--color-primary);
 }
 

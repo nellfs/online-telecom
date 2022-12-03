@@ -9,7 +9,7 @@ const HelpItem = (props: HelpCard) => {
   return (
     <div className="help__item">
       <div className="help__item-container">
-        <img src={props.icon}></img>
+        <img src={props.icon} alt={`${props.icon} indicador`}></img>
         <p>{props.text}</p>
       </div>
     </div>

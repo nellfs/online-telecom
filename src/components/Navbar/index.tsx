@@ -39,6 +39,7 @@ const NavBar = () => {
               <div className="number-contact">0800 088 1111</div>
               <div>aA</div>
               <img
+                alt="tema"
                 src={themeType === 'light' ? DarkThemeIcon : LightThemeIcon}
                 onClick={() => {
                   setCurrentTheme(switchTheme());
@@ -48,6 +49,7 @@ const NavBar = () => {
             <div className="navbar__top-right">
               <div>{realCity}</div>
               <img
+                alt="trocar cidade"
                 src={
                   themeType === 'light'
                     ? DarkChevronDownIcon
@@ -66,19 +68,19 @@ const NavBar = () => {
                     src={
                       themeType === 'light' ? DarkOnlineIcon : LightOnlineIcon
                     }
-                    alt={'Online Telecom'}
+                    alt={'Online Telecom Logo'}
                   ></img>
                 </Link>
                 <div className="bottom__left-options">
-                  <a>PARA VOCÊ</a>
-                  <a>PARA EMPRESAS</a>
+                  <Link to={''}>PARA VOCÊ</Link>
+                  <Link to={''}>PARA EMPRESAS</Link>
                 </div>
               </div>
               <div className="bottom__right">
                 <div className="bottom__right-options">
-                  <div>Produtos e serviços</div>
-                  <div>Institucional</div>
-                  <div>Blog</div>
+                  <Link to={''}>Produtos e serviços</Link>
+                  <Link to={''}>Institucional</Link>
+                  <Link to={''}>Blog</Link>
                 </div>
                 <Button theme="red">Assine já</Button>
                 <Button theme="outline">2ª Via</Button>
