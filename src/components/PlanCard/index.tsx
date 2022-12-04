@@ -1,6 +1,7 @@
 import './index.css';
-import WifiIcon from '../../assets/icons/wifi_icon.png';
 import PlanButton, { BonusOptions } from '../PlanButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWifi } from '@fortawesome/free-solid-svg-icons';
 
 interface IPlanCard {
   speed: number;
@@ -23,7 +24,8 @@ const PlanCard = (props: IPlanCard) => {
       </div>
       <div className="plan__card-center">
         <div className="wifi-icon">
-          <img src={WifiIcon} alt="sinal" className="wifi-icon"></img> Wi-Fi
+          <FontAwesomeIcon icon={faWifi} className="wifi-icon" />
+          Wi-Fi
         </div>
         {props.bonus?.map((bonus, n) => {
           return <PlanButton key={n} bonusType={bonus}></PlanButton>;

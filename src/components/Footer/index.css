@@ -156,11 +156,20 @@
 
 @media screen and (max-width: 1200px) {
   .footer {
+    display: flex;
     height: fit-content;
+    box-sizing: border-box;
   }
 
   .footer .container {
-    padding: 40px 20px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .footer-contact_item {
+    box-sizing: border-box;
+    margin: auto;
+    width: 95%;
   }
 
   .footer-container__columns {
@@ -172,7 +181,7 @@
   .footer-container__columns .download {
     margin-left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .footer-social_column .logo {
