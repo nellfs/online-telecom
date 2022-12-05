@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import './index.css';
 
-const BurguerIcon = () => {
+interface IBurgerButton {
+  onClick: () => void;
+}
+
+const BurgerButton = ({ onClick }: IBurgerButton) => {
   const [active, setActive] = useState('');
-  const changeBar = () => {
+  const toggleButton = () => {
     setActive(active == '' ? '-active' : '');
   };
 
@@ -11,7 +15,10 @@ const BurguerIcon = () => {
     <button
       aria-label="burger menu"
       className="burgericon"
-      onClick={() => changeBar()}
+      onClick={() => {
+        toggleButton();
+        onClick();
+      }}
     >
       <div className={`burgerbar1${active}`} />
       <div className={`burgerbar2${active}`}></div>
@@ -20,4 +27,4 @@ const BurguerIcon = () => {
   );
 };
 
-export default BurguerIcon;
+export default BurgerButton;
