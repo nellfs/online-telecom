@@ -19,12 +19,18 @@ import { useToggle, useWindowWidth } from '../../hooks';
 
 const NavBar = () => {
   const windowWidth = useWindowWidth();
-  const [modalActive, toggleModalActive] = useToggle();
+  const [modalActive, toggleModalActive, setModalActive] = useToggle();
   const [realCity, setRealCity] = useState<string>();
   const { city } = useParams<{ city: Cities }>(); // This is necessary because I'm not using a real API
   const { themeType, setCurrentTheme } = useTheme();
 
   const showModal = modalActive === true && windowWidth <= 1090;
+
+  useEffect(() => {
+    if (windowWidth > 1090) {
+      setModalActive(false);
+    }
+  }, [showModal]);
 
   const switchTheme = () => {
     if (themeType === 'light') return 'dark';

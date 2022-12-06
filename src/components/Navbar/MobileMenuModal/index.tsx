@@ -14,9 +14,8 @@ const closeModal = {
 };
 
 const MobileMenuModal = ({ open = false }: IMobileMenuModal) => {
-  if (!open) {
-    document.body.style.overflow = 'unset';
-  } else document.body.style.overflow = 'hidden';
+  if (!open) document.body.style.overflow = 'unset';
+  else document.body.style.overflow = 'hidden';
 
   return ReactDOM.createPortal(
     <div className="mobile__navbar-modal" style={open ? openModal : closeModal}>
