@@ -11,7 +11,7 @@ import Button from '../Buttons';
 import location_finder from '../../utils/location_fixer.json';
 import { Link, useParams } from 'react-router-dom';
 import { Cities } from '../../types/map';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTheme } from '../../contexts/Theme/ThemeContext';
 import BurgerButton from '../BurgerButton ';
 import MobileMenuModal from './MobileMenuModal';
@@ -24,13 +24,9 @@ const NavBar = () => {
   const { city } = useParams<{ city: Cities }>(); // This is necessary because I'm not using a real API
   const { themeType, setCurrentTheme } = useTheme();
 
-  const showModal = modalActive === true && windowWidth <= 1090;
-
   useEffect(() => {
-    if (windowWidth > 1090) {
-      setModalActive(false);
-    }
-  }, [showModal]);
+    if (windowWidth > 1090 && modalActive) setModalActive(false);
+  }, [windowWidth]);
 
   const switchTheme = () => {
     if (themeType === 'light') return 'dark';
@@ -112,8 +108,9 @@ const NavBar = () => {
                     onClick={() => {
                       toggleModalActive();
                     }}
+                    open={modalActive}
                   />
-                  <MobileMenuModal open={showModal}></MobileMenuModal>
+                  <MobileMenuModal open={modalActive}></MobileMenuModal>
                 </div>
               </div>
             </div>

@@ -69,7 +69,7 @@
 .plans__subtitle {
   font-family: Roboto;
   font-weight: 300;
-  color: var(--color-grey);
+  color: var(--dark-text);
   width: 100%;
   display: flex;
   flex-direction: row;

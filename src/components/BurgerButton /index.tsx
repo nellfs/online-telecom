@@ -3,26 +3,23 @@ import './index.css';
 
 interface IBurgerButton {
   onClick: () => void;
+  open: boolean;
 }
 
-const BurgerButton = ({ onClick }: IBurgerButton) => {
-  const [active, setActive] = useState('');
-  const toggleButton = () => {
-    setActive(active == '' ? '-active' : '');
-  };
+const BurgerButton = ({ onClick, open }: IBurgerButton) => {
+  const getActive = () => (open ? '-active' : '');
 
   return (
     <button
       aria-label="burger menu"
       className="burgericon"
       onClick={() => {
-        toggleButton();
         onClick();
       }}
     >
-      <div className={`burgerbar1${active}`} />
-      <div className={`burgerbar2${active}`}></div>
-      <div className={`burgerbar3${active}`}></div>
+      <div className={`burgerbar1${getActive()}`} />
+      <div className={`burgerbar2${getActive()}`}></div>
+      <div className={`burgerbar3${getActive()}`}></div>
     </button>
   );
 };
