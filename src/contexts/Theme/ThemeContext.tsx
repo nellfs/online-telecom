@@ -1,4 +1,5 @@
-import React, { Dispatch, ReactNode, SetStateAction, useState } from 'react';
+import React, { Dispatch, ReactNode, SetStateAction } from 'react';
+import { usePersistentState } from '../../hooks';
 import { THEMES } from '../../theme/themes';
 import { Theme, ThemeType } from '../../theme/themetype';
 
@@ -18,7 +19,10 @@ interface iThemeProvider {
 }
 
 export const ThemeProvider = ({ children }: iThemeProvider) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeType>('light');
+  const [currentTheme, setCurrentTheme] = usePersistentState<ThemeType>(
+    'theme',
+    'light'
+  );
 
   return (
     <ThemeContext.Provider
