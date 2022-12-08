@@ -1,18 +1,18 @@
-import online_alimentos_d from '../assets/banners/desktop/online_alimentos.webp';
-import online_combo_d from '../assets/banners/desktop/online_combo.webp';
-import online_esportes_d from '../assets/banners/desktop/online_esportes.webp';
-import online_leitura_d from '../assets/banners/desktop/online_leitura.webp';
-import online_music_d from '../assets/banners/desktop/online_music.webp';
-import online_video01_d from '../assets/banners/desktop/online_video01.webp';
-import online_video02_d from '../assets/banners/desktop/online_video02.webp';
+import online_alimentos_d from '../assets/banners/desktop/online_alimentos.png';
+import online_combo_d from '../assets/banners/desktop/online_combo.png';
+import online_esportes_d from '../assets/banners/desktop/online_esportes.png';
+import online_leitura_d from '../assets/banners/desktop/online_leitura.png';
+import online_music_d from '../assets/banners/desktop/online_music.png';
+import online_video01_d from '../assets/banners/desktop/online_video01.png';
+import online_video02_d from '../assets/banners/desktop/online_video02.png';
 
-import online_alimentos_m from '../assets/banners/mobile/online_alimentos.webp';
-import online_combo_m from '../assets/banners/mobile/online_combo.webp';
-import online_esportes_m from '../assets/banners/mobile/online_esportes.webp';
-import online_leitura_m from '../assets/banners/mobile/online_leitura.webp';
-import online_music_m from '../assets/banners/mobile/online_music.webp';
-import online_video01_m from '../assets/banners/mobile/online_video01.webp';
-import online_video02_m from '../assets/banners/mobile/online_video02.webp';
+import online_alimentos_m from '../assets/banners/mobile/online_alimentos.png';
+import online_combo_m from '../assets/banners/mobile/online_combo.png';
+import online_esportes_m from '../assets/banners/mobile/online_esportes.png';
+import online_leitura_m from '../assets/banners/mobile/online_leitura.png';
+import online_music_m from '../assets/banners/mobile/online_music.png';
+import online_video01_m from '../assets/banners/mobile/online_video01.png';
+import online_video02_m from '../assets/banners/mobile/online_video02.png';
 
 interface BannerPack {
   banners: [

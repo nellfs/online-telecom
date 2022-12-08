@@ -11,7 +11,7 @@ import Button from '../Buttons';
 import location_finder from '../../utils/location_fixer.json';
 import { Link, useParams } from 'react-router-dom';
 import { Cities } from '../../types/map';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from '../../contexts/Theme/ThemeContext';
 import BurgerButton from '../BurgerButton ';
 import MobileMenuModal from './MobileMenuModal';

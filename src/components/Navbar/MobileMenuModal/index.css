@@ -9,3 +9,38 @@
   overflow: hidden;
   transition: left 0.2s;
 }
+
+.mobile__navbar-modal .list {
+  width: 400px;
+  padding: 21px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+
+.mobile__navbar-modal button {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  width: fit-content;
+  height: 35px;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.mobile__navbar-modal .mobile__navbar-modal .dark__button {
+  background-color: white;
+  color: var(--color-dark);
+}
+
+.mobile__navbar-modal .dark__button img {
+  margin-right: 5px;
+  width: 13px;
+}
