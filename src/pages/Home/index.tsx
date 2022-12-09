@@ -12,7 +12,7 @@ import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
-    <div className="main-home">
+    <div className="main-home" id="home-id">
       <NavBar />
       <BannerCarousel />
       <div className="page-home">

@@ -30,6 +30,7 @@ const NavBar = () => {
 
   const switchTheme = () => {
     if (themeType === 'light') return 'dark';
+
     return 'light';
   };
 

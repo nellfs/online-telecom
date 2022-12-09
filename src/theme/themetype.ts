@@ -11,4 +11,5 @@ export interface Theme {
   '--dark-text': Color;
   '--dark': Color;
   '--soft-dark': Color;
+  '--card-outline': Color;
 }

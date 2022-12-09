@@ -72,7 +72,7 @@
 /* Track */
 .location__options::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  border: 3px solid var(--color-secondary);
+  border: 3px solid var(--color-dark);
 }
 
 @keyframes hide-desktop {
