@@ -1,8 +1,9 @@
 import Location from './pages/Location';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
 import { useTheme } from './contexts/Theme/ThemeContext';
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
+import Loading from './components/Loading';
+const Home = lazy(() => import('./pages/Home'));
 
 function App() {
   const { theme, themeType } = useTheme();
@@ -21,7 +22,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Location />}></Route>
-          <Route path="/:city/para-voce" element={<Home />}></Route>
+          <Route
+            path="/:city/para-voce"
+            element={
+              <Suspense fallback={<Loading />}>
+                <Home />
+              </Suspense>
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>

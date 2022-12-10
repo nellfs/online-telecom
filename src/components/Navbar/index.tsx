@@ -8,7 +8,7 @@ import DarkOnlineIcon from '../../assets/icons/dark/onlinetelecom_icon.webp';
 import LightUserIcon from '../../assets/icons/light/user_icon.png';
 import DarkUserIcon from '../../assets/icons/dark/user_icon.png';
 import Button from '../Buttons';
-import location_finder from '../../utils/location_fixer.json';
+import location_finder from '../../utils/dummy_allCities.json';
 import { Link, useParams } from 'react-router-dom';
 import { Cities } from '../../types/map';
 import { useEffect, useState } from 'react';

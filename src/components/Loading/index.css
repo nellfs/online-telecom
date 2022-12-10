@@ -1,0 +1,27 @@
+.main__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-scrollbar);
+}
+
+.load_icon {
+  animation: rotation 1s infinite;
+  border: 10px rgba(0, 0, 0, 0.2) solid;
+  border-top: 10px rgba(0, 0, 0, 0.4) solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(1turn);
+  }
+}
