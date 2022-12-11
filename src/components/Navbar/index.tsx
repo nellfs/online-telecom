@@ -8,20 +8,18 @@ import DarkOnlineIcon from '../../assets/icons/dark/onlinetelecom_icon.webp';
 import LightUserIcon from '../../assets/icons/light/user_icon.png';
 import DarkUserIcon from '../../assets/icons/dark/user_icon.png';
 import Button from '../Buttons';
-import location_finder from '../../utils/dummy_allCities.json';
-import { Link, useParams } from 'react-router-dom';
-import { Cities } from '../../types/map';
-import { useEffect, useState } from 'react';
+import location_finder from '../../utils/dummy_cityName.json';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { useTheme } from '../../contexts/Theme/ThemeContext';
 import BurgerButton from '../BurgerButton ';
 import MobileMenuModal from './MobileMenuModal';
+import { Cities } from '../../types/map';
 import { useToggle, useWindowWidth } from '../../hooks';
 
-const NavBar = () => {
+const NavBar = ({ city }: { city: Cities }) => {
   const windowWidth = useWindowWidth();
   const [modalActive, toggleModalActive, setModalActive] = useToggle();
-  const [realCity, setRealCity] = useState<string>();
-  const { city } = useParams<{ city: Cities }>(); // This is necessary because I'm not using a real API
   const { themeType, setCurrentTheme } = useTheme();
 
   useEffect(() => {
@@ -33,10 +31,6 @@ const NavBar = () => {
 
     return 'light';
   };
-
-  useEffect(() => {
-    if (city) setRealCity(location_finder[city]);
-  }, [city]);
 
   return (
     <>
@@ -57,7 +51,7 @@ const NavBar = () => {
                 ></img>
               </div>
               <div className="navbar__top-right">
-                <div>{realCity}</div>
+                <div>{location_finder[city]}</div>
                 <img
                   alt="trocar cidade"
                   src={

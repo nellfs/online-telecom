@@ -9,11 +9,12 @@ import Banner from '../../components/LargeCard';
 import FAQ from '../../components/FAQ';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
+import { Cities } from '../../types/map';
 
-const Home = () => {
+const Home = ({ city }: { city: string }) => {
   return (
     <div className="main-home" id="home-id">
-      <NavBar />
+      <NavBar city={city as Cities} />
       <BannerCarousel />
       <div className="page-home">
         <div className="plans">
