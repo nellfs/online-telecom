@@ -11,7 +11,8 @@ export const THEMES: Record<ThemeType, Theme> = {
     '--text': Color.BROWN,
     '--dark-text': Color.GRAY,
     '--soft-dark': Color.SOFT_LIGHT,
-    '--card-outline': Color.ICE
+    '--card-outline': Color.ICE,
+    '--soft-background': Color.FALSE_WHITE
   },
   dark: {
     '--primary': Color.PRIMARY,
@@ -22,6 +23,7 @@ export const THEMES: Record<ThemeType, Theme> = {
     '--text': Color.WHITE,
     '--dark-text': Color.ICE,
     '--soft-dark': Color.SOFT_DARK,
-    '--card-outline': Color.SOFT_DARK
+    '--card-outline': Color.SOFT_DARK,
+    '--soft-background': Color.BROWN
   }
 };

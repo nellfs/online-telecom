@@ -8,7 +8,6 @@ import DarkOnlineIcon from '../../assets/icons/dark/onlinetelecom_icon.webp';
 import LightUserIcon from '../../assets/icons/light/user_icon.png';
 import DarkUserIcon from '../../assets/icons/dark/user_icon.png';
 import Button from '../Buttons';
-import location_finder from '../../utils/dummy_cityName.json';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useTheme } from '../../contexts/Theme/ThemeContext';
@@ -17,7 +16,13 @@ import MobileMenuModal from './MobileMenuModal';
 import { Cities } from '../../types/map';
 import { useToggle, useWindowWidth } from '../../hooks';
 
-const NavBar = ({ city }: { city: Cities }) => {
+const NavBar = ({
+  city = undefined,
+  solid = true
+}: {
+  city?: Cities;
+  solid?: boolean;
+}) => {
   const windowWidth = useWindowWidth();
   const [modalActive, toggleModalActive, setModalActive] = useToggle();
   const { themeType, setCurrentTheme } = useTheme();
@@ -35,7 +40,7 @@ const NavBar = ({ city }: { city: Cities }) => {
   return (
     <>
       <div className="main-navbar">
-        <div className="navbar__block"></div>
+        {solid ? <div className="navbar__block" /> : null}
         <div className="navbar">
           <div className="navbar__top">
             <div className="container__top">
@@ -51,15 +56,17 @@ const NavBar = ({ city }: { city: Cities }) => {
                 ></img>
               </div>
               <div className="navbar__top-right">
-                <div>{location_finder[city]}</div>
-                <img
-                  alt="trocar cidade"
-                  src={
-                    themeType === 'light'
-                      ? DarkChevronDownIcon
-                      : LightChevronDownIcon
-                  }
-                ></img>
+                <div>{city}</div>
+                {city ? (
+                  <img
+                    alt="trocar cidade"
+                    src={
+                      themeType === 'light'
+                        ? DarkChevronDownIcon
+                        : LightChevronDownIcon
+                    }
+                  />
+                ) : null}
               </div>
             </div>
           </div>

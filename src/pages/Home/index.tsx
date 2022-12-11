@@ -3,6 +3,7 @@ import NavBar from '../../components/Navbar';
 import PlanCard from '../../components/PlanCard';
 
 import TelecoImage from '../../assets/images/bg_teleco_tv.png';
+import allCities from '../../utils/dummy_cityName.json';
 
 import './index.css';
 import Banner from '../../components/LargeCard';
@@ -10,11 +11,18 @@ import FAQ from '../../components/FAQ';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import { Cities } from '../../types/map';
+import { useParams } from 'react-router-dom';
+import Page404 from '../../components/Page404';
 
-const Home = ({ city }: { city: string }) => {
+const Home = () => {
+  const { city } = useParams();
+  const checkCity = allCities[city as Cities] as Cities;
+
+  if (checkCity === undefined) return <Page404></Page404>;
+
   return (
     <div className="main-home" id="home-id">
-      <NavBar city={city as Cities} />
+      <NavBar city={checkCity} />
       <BannerCarousel />
       <div className="page-home">
         <div className="plans">
