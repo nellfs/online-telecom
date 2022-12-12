@@ -22,9 +22,9 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Location />}></Route>
+          <Route path="/online-telecom/" element={<Location />}></Route>
           <Route
-            path="/:city/para-voce"
+            path="/online-telecom/:city/para-voce"
             element={
               <Suspense fallback={<Loading />}>
                 <Home></Home>
