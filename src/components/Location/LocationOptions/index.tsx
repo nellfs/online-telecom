@@ -1,37 +1,34 @@
-import "./index.css";
-import SearchIcon from "../../../assets/icons/search_icon.png";
-import locations_data from "../../../utils/dummy_locations.json";
-import { MapStates } from "../../../types/map";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import './index.css';
+import SearchIcon from '../../../assets/icons/search_icon.png';
+import locations_data from '../../../utils/dummy_locations.json';
+import { MapStates } from '../../../types/map';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface IMap {
   state: MapStates;
 }
 
 const LocationOptions = (currentState: IMap) => {
-  const locations_string = JSON.stringify(locations_data);
-  const locations = JSON.parse(locations_string);
-
-  const [searchLocation, setSearchLocation] = useState("");
+  const [searchLocation, setSearchLocation] = useState('');
 
   const getCities = () => {
-    const cities = locations.states[currentState.state]
+    const cities = locations_data.states[currentState.state]
       .filter((val: string) => {
-        if (searchLocation == "") return val;
+        if (searchLocation == '') return val;
         if (val.toLowerCase().includes(searchLocation.toLowerCase()))
           return val;
       })
       .map((cities: string, n: number) => {
         const normalized_city = cities
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .replace(/ /g, "-");
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/ /g, '-');
         return (
           <Link
             key={n}
-            to={`${normalized_city.toLowerCase()}` + "/para-voce"}
-            style={{ textDecoration: "none" }}
+            to={`${normalized_city.toLowerCase()}` + '/para-voce'}
+            style={{ textDecoration: 'none' }}
           >
             <li>
               {cities} - {currentState.state}
