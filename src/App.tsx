@@ -20,11 +20,11 @@ function App() {
         } as React.CSSProperties
       }
     >
-      <BrowserRouter>
+      <BrowserRouter basename="/online-telecom">
         <Routes>
-          <Route path="/online-telecom/" element={<Location />}></Route>
+          <Route path="/" element={<Location />}></Route>
           <Route
-            path="/online-telecom/:city/para-voce"
+            path="/:city/para-voce"
             element={
               <Suspense fallback={<Loading />}>
                 <Home></Home>
