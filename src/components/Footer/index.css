@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 60px;
   width: 100%;
   height: 499px;
   background-color: #373435;
@@ -57,13 +56,14 @@
 .footer-social_column .download {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   margin-bottom: 20px;
   margin-left: 8px;
 }
 
 .footer-social_column .download img {
   display: block;
+  cursor: pointer;
 }
 
 .footer-social_column .social-media {
@@ -102,7 +102,6 @@
 
 .footer-options__container h2 {
   font-size: 16px;
-  font-synthesis: 700;
   color: #fff;
   margin: 0;
 }
@@ -112,6 +111,11 @@
   font-weight: 400;
   font-size: 16px;
   display: inline-flex;
+}
+
+.footer-options__container li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* third column */
@@ -134,6 +138,11 @@
 .footer-contact_item a {
   padding: 12px 0px;
   margin: auto;
+}
+
+.footer-contact_item a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .footer-container__copyrights {

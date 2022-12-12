@@ -46,7 +46,9 @@ const NavBar = ({
             <div className="container__top">
               <div className="navbar__top-left">
                 <div className="number-contact">0800 088 1111</div>
-                <div>aA</div>
+                <div title="Work in progress..." style={{ cursor: 'progress' }}>
+                  aA
+                </div>
                 <img
                   alt="tema"
                   src={themeType === 'light' ? DarkThemeIcon : LightThemeIcon}

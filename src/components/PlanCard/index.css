@@ -126,6 +126,7 @@
 }
 
 .plan__card-end a {
+  cursor: pointer;
   padding: 18px;
   display: block;
   background-color: var(--color-primary);
