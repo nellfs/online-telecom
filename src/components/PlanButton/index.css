@@ -17,11 +17,9 @@
   width: 8em;
   padding: 0px 4px;
   max-width: 100%;
-  -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
-    drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 
-  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white)
-    drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff)
+    drop-shadow(0 -1px 0 #fff) drop-shadow(0 1px 0 #fff);
 }
 
 .plan__button .caret-right {

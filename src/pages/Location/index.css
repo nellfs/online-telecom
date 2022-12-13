@@ -16,27 +16,14 @@
 .location__white {
   display: flex;
   width: 50%;
-  height: 100vh;
-  background-color: var(--color-light);
+  height: 100%;
+  background-color: white;
 }
 
 .location__white__main {
   margin: auto;
+  box-sizing: border-box;
   padding: 72px;
-}
-
-.location__red {
-  display: flex;
-  overflow: hidden;
-  width: 50%;
-  height: 100vh;
-  background-color: var(--color-primary);
-}
-.online_icon {
-  left: 72px;
-  top: 72px;
-  position: absolute;
-  width: 50px;
 }
 
 .location__white__main h2 {
@@ -54,6 +41,19 @@
 
 .location__white__main b {
   color: var(--color-primary);
+}
+.location__red {
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+.online_icon {
+  left: 72px;
+  top: 72px;
+  position: absolute;
+  width: 50px;
 }
 
 @media screen and (max-width: 720px) {

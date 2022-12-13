@@ -1,5 +1,5 @@
 import Location from './pages/Location';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { useTheme } from './contexts/Theme/ThemeContext';
 import React, { lazy, Suspense } from 'react';
 import Loading from './components/Loading';

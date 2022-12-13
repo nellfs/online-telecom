@@ -8,7 +8,7 @@ export const MapImage = () => {
   const [state, setState] = useState<MapStates>();
   const [mapVisible, setMapVisible] = useState(true);
 
-  const changeVisible = () => {
+  const BackToMap = () => {
     setMapVisible(!mapVisible);
     setState(undefined);
   };
@@ -21,17 +21,17 @@ export const MapImage = () => {
 
   if (!mapVisible && state) {
     return (
-      <>
+      <div className="map__list">
         <LocationOptions state={state} />
         <button
           className="map__back"
           onClick={() => {
-            changeVisible();
+            BackToMap();
           }}
         >
           <img src={BackIcon}></img>
         </button>
-      </>
+      </div>
     );
   }
 
