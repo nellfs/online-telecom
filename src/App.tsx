@@ -1,5 +1,5 @@
 import Location from './pages/Location';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import { useTheme } from './contexts/Theme/ThemeContext';
 import React, { lazy, Suspense } from 'react';
 import Loading from './components/Loading';
@@ -20,7 +20,7 @@ function App() {
         } as React.CSSProperties
       }
     >
-      <BrowserRouter basename="/online-telecom">
+      <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<Location />}></Route>
           <Route
@@ -32,7 +32,7 @@ function App() {
             }
           ></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

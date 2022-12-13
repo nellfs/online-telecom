@@ -1,6 +1,7 @@
 {
   "name": "online-telecom",
   "private": true,
+  "homepage": "https://nellfs.github.io/online-telecom/",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
