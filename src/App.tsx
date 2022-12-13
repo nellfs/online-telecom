@@ -20,19 +20,17 @@ function App() {
         } as React.CSSProperties
       }
     >
-      <HashRouter basename="/">
-        <Routes>
-          <Route path="/" element={<Location />}></Route>
-          <Route
-            path="/:city/para-voce"
-            element={
-              <Suspense fallback={<Loading />}>
-                <Home></Home>
-              </Suspense>
-            }
-          ></Route>
-        </Routes>
-      </HashRouter>
+      <Routes>
+        <Route path="/" element={<Location />}></Route>
+        <Route
+          path="/:city/para-voce"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home></Home>
+            </Suspense>
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }
