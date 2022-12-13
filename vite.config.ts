@@ -5,5 +5,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/online-telecom/',
-  plugins: [react(), eslintPlugin()]
+  plugins: [react(), eslintPlugin()],
+  build: {
+    outDir: './docs'
+  }
 });
