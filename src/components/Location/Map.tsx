@@ -21,7 +21,7 @@ export const MapImage = () => {
 
   if (!mapVisible && state) {
     return (
-      <div className="map__list">
+      <div>
         <LocationOptions state={state} />
         <button
           className="map__back"

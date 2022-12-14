@@ -1,18 +1,16 @@
 .location__options__container {
   position: relative;
-  margin: 0 auto;
   width: 300px;
-  height: 100%;
+  height: 80%;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-name: show-desktop;
 }
 
 .location__options__selector {
-  position: absolute;
-  top: 70px;
+  margin-top: 70px;
   width: 100%;
-  height: 82%;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-name: hide-desktop;
+  height: 40px;
 }
 
 .location__search {
@@ -43,14 +41,15 @@
   color: var(--color-light);
 }
 
-.location__options {
+.location__options-list {
+  padding-top: 20px;
+  height: calc(100% - 60px);
   overflow-y: scroll;
-  height: 83%;
   overflow-x: hidden;
   display: block;
   width: 80%;
   overflow: auto;
-  margin-top: 48px;
+  margin: 0;
   margin-left: 10px;
   display: block;
   color: var(--color-light);
@@ -59,33 +58,23 @@
   font-weight: 500;
 }
 
-.location__options li {
+.location__options-list li {
   color: var(--color-light);
   margin-bottom: 28px;
 }
 
-.location__options::-webkit-scrollbar {
+.location__options-list::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 
 /* Track */
-.location__options::-webkit-scrollbar-thumb {
+.location__options-list::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid var(--color-dark);
 }
 
-@keyframes hide-desktop {
-  from {
-    margin-left: 50vw;
-  }
-
-  to {
-    margin: 0px;
-  }
-}
-
-@keyframes hide-mobile {
+@keyframes show-desktop {
   from {
     margin-left: 100vw;
   }
@@ -96,12 +85,21 @@
 }
 
 @media screen and (max-width: 720px) {
-  .location__options__selector {
-    top: 18px;
-    animation-name: hide-mobile;
-    height: 65%;
+  .location__options__container {
+    height: calc(60%);
+    animation-name: show-mobile;
   }
-  .location__options {
-    margin-top: 24px;
+  .location__options__selector {
+    margin-top: 5vh;
+  }
+}
+
+@keyframes show-mobile {
+  from {
+    margin-left: 150%;
+  }
+
+  to {
+    margin: 0px;
   }
 }

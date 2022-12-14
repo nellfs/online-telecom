@@ -9,12 +9,10 @@ const Location = () => {
       <div className="location__white">
         <img className="online_icon" src={OnlineIcon} alt="Online Telecom" />
         <div className="location__white__main">
-          <h2>
-            Selecione seu estado
-            <p>
-              Chegou a sua vez de ser <b>ONLINE TELECOM!</b>
-            </p>
-          </h2>
+          <h2>Selecione seu estado</h2>
+          <p>
+            Chegou a sua vez de ser <b>ONLINE TELECOM!</b>
+          </p>
         </div>
       </div>
       <div className="location__red">

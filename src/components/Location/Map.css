@@ -6,12 +6,9 @@
 }
 
 .map__back {
-  display: flex;
   position: absolute;
-  width: 42px;
-  height: 42px;
-  margin-left: 32px;
-  margin-top: 32px;
+  left: 52%;
+  top: 40px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -27,10 +24,12 @@
   .map__back {
     background-color: var(--color-map-red-dark);
     width: 120px;
-    height: 34px;
+    margin-top: 15%;
+    height: 35px;
     border-radius: 100px;
     margin-left: 0;
-    bottom: 2.2vh;
+    top: auto;
+    bottom: 20px;
     left: calc(50vw - 60px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
   }
