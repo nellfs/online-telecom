@@ -8,7 +8,7 @@
 
 - 🛑 Nenhuma API foi utilizada no desenvolvimento desse site. Os dados são passados através de [Dummy data](https://github.com/nellfs/online-telecom/tree/main/src/utils)
 
-- 🌱 O projeto foca somente nas duas rotas iniciais do site original (**Mapa** e **Home**)
+- 🌱 O escopo do projeto foca somente nas duas rotas iniciais do site original (**Mapa** e **Home**)
 
 ## 🏃 Setup e Debug
 
