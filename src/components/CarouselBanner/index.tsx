@@ -19,8 +19,8 @@ const CarouselBanner = () => {
       showThumbs={false}
       emulateTouch={true}
       showArrows={false}
+      swipeScrollTolerance={100}
       preventMovementUntilSwipeScrollTolerance={true}
-      swipeScrollTolerance={50}
       renderIndicator={(clickHandler, isSelected) => {
         const dot = {
           width: '12px',
